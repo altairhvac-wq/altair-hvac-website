@@ -53,7 +53,7 @@ const localBusinessJsonLd = {
     "Bountiful, Utah",
     "Ogden, Utah",
   ],
-  url: "https://altaircontracting.com",
+  url: "https://altairhvac.com",
 };
 
 export default function RootLayout({
