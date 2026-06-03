@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   title: "Service Areas",
   description:
     "HVAC service in Roy, Layton, Clearfield, Bountiful, Ogden, Utah, and surrounding communities. Repairs, installations, and maintenance.",
+  alternates: {
+    canonical: "/service-areas",
+  },
+  openGraph: {
+    url: "/service-areas",
+  },
 };
 
 export default function ServiceAreasPage() {

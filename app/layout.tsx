@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { COMPANY_NAME, EMAIL, PHONE, SERVICE_AREA } from "@/lib/constants";
+import {
+  COMPANY_NAME,
+  EMAIL,
+  PHONE,
+  SERVICE_AREA,
+  SITE_URL,
+} from "@/lib/constants";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,7 +59,7 @@ const localBusinessJsonLd = {
     "Bountiful, Utah",
     "Ogden, Utah",
   ],
-  url: "https://altairhvac.com",
+  url: SITE_URL,
 };
 
 export default function RootLayout({

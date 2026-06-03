@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Call or email Altair Climate Control for a free HVAC estimate in Roy, Layton, Clearfield, Bountiful, and Ogden, Utah. No obligation — we are happy to answer your questions.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

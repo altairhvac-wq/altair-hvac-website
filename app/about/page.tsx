@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Altair Climate Control — a local HVAC company serving Roy, Layton, Clearfield, Bountiful, and Ogden, Utah. Clear communication and quality workmanship.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {

@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   title: "HVAC Financing",
   description:
     `Altair Climate Control is evaluating financing options for future customers in ${SERVICE_AREA}. Learn more and request a free estimate.`,
+  alternates: {
+    canonical: "/financing",
+  },
+  openGraph: {
+    url: "/financing",
+  },
 };
 
 export default function FinancingPage() {

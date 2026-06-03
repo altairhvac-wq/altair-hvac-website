@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   title: "HVAC Services",
   description:
     `AC repair, furnace repair, installation, maintenance, and indoor air quality for homeowners in ${SERVICE_AREA}.`,
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    url: "/services",
+  },
 };
 
 export default function ServicesPage() {

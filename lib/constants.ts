@@ -1,3 +1,5 @@
+export const SITE_URL = "https://altairhvac.com";
+
 export const COMPANY_NAME = "Altair Climate Control";
 export const PHONE = "(385) 251-4990";
 export const PHONE_HREF = "tel:+3852514990";
