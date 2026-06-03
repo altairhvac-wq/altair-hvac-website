@@ -13,36 +13,36 @@ import { ESTIMATE_MAILTO } from "@/lib/links";
 export const metadata: Metadata = {
   title: "HVAC Services",
   description:
-    "AC repair, furnace repair, installation, maintenance, emergency service, and indoor air quality solutions. Serving homeowners throughout Davis County, Utah.",
+    "AC repair, furnace repair, installation, maintenance, emergency service, and indoor air quality for homeowners in Davis County, Utah.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow={`Serving ${SERVICE_AREA}`}
-        title="Complete HVAC Services for Your Home"
-        description="From emergency repairs to planned maintenance and new installations, our licensed technicians keep your home comfortable in every season."
+        eyebrow={SERVICE_AREA}
+        title="Heating & Cooling Services for Your Home"
+        description="From a broken AC in July to a furnace that will not start in January, we help Davis County homeowners get comfortable again — with clear answers and careful work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Free Estimate", href: ESTIMATE_MAILTO }}
+        secondaryCta={{ label: "Request Free Estimate", href: ESTIMATE_MAILTO }}
       />
 
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="What We Do"
-            title="Heating & Cooling Services"
-            description="Whether you need a quick repair or a full system upgrade, we provide honest recommendations and quality work on every job."
+            title="Services We Provide"
+            description="Each service below explains why it matters, what we do, and warning signs that it may be time to call."
           />
           <div className="mt-12">
             <ServiceCardsGrid services={services} />
           </div>
           <p className="mt-10 text-center text-slate-600">
-            Not sure which service you need?{" "}
+            Not sure what you need?{" "}
             <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
               Contact us
             </Link>{" "}
-            or browse our{" "}
+            — describe the problem and we will point you in the right direction. See our{" "}
             <Link href="/service-areas" className="font-semibold text-sky-700 hover:text-sky-800">
               service areas
             </Link>

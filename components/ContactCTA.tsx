@@ -8,14 +8,14 @@ export default function ContactCTA() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-sky-400">
-            Contact Us
+            Ready to Talk?
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-            Get Your Free Estimate Today
+            Call or Request a Free Estimate
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-300">
-            Call now for immediate help or request a no-obligation quote. We
-            respond quickly and serve the {SERVICE_AREA}.
+            No pressure — tell us what is going on with your heating or cooling
+            and we will help you figure out the next step. Serving {SERVICE_AREA}.
           </p>
 
           <p className="mt-8">
@@ -32,7 +32,7 @@ export default function ContactCTA() {
               href={PHONE_HREF}
               className="inline-flex w-full items-center justify-center rounded-lg bg-sky-500 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-400 sm:w-auto"
             >
-              Call Now
+              Call {PHONE}
             </a>
             <Link
               href="/contact"

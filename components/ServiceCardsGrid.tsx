@@ -52,7 +52,7 @@ type ServiceCardsGridProps = {
 
 export default function ServiceCardsGrid({ services }: ServiceCardsGridProps) {
   return (
-    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-8 lg:grid-cols-2">
       {services.map((service) => (
         <article
           key={service.title}
@@ -76,6 +76,20 @@ export default function ServiceCardsGrid({ services }: ServiceCardsGridProps) {
           <p className="mt-3 leading-relaxed text-slate-600">
             {service.description}
           </p>
+          <p className="mt-4 text-sm font-semibold text-slate-900">
+            Why homeowners call us
+          </p>
+          <p className="mt-1 text-sm leading-relaxed text-slate-600">
+            {service.whyItMatters}
+          </p>
+          <p className="mt-4 text-sm font-semibold text-slate-900">
+            Signs you may need service
+          </p>
+          <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-600">
+            {service.signs.map((sign) => (
+              <li key={sign}>{sign}</li>
+            ))}
+          </ul>
         </article>
       ))}
     </div>

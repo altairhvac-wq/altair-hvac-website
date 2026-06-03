@@ -7,41 +7,41 @@ export const davisCountyCities: ServiceCity[] = [
   {
     name: "Bountiful",
     description:
-      "Full HVAC repair, installation, and maintenance for Bountiful homeowners and small businesses.",
+      "Heating and cooling repairs, installations, and tune-ups for homes in Bountiful and nearby neighborhoods.",
   },
   {
     name: "Kaysville",
     description:
-      "Reliable heating and cooling service in Kaysville — from seasonal tune-ups to emergency repairs.",
+      "From summer AC issues to winter furnace trouble — we serve Kaysville homeowners when comfort matters.",
   },
   {
     name: "Layton",
     description:
-      "Fast response for AC, furnace, and heat pump service throughout Layton neighborhoods.",
+      "AC, furnace, and heat pump service across Layton. Call with your address if you are unsure we cover your area.",
   },
   {
     name: "Farmington",
     description:
-      "Trusted local HVAC technicians serving Farmington with honest pricing and quality workmanship.",
+      "Local HVAC help in Farmington for repairs, replacements, and seasonal maintenance.",
   },
   {
     name: "Centerville",
     description:
-      "Comfort solutions for Centerville homes, including system upgrades and indoor air quality improvements.",
+      "Comfort problems in Centerville? We handle repairs, system upgrades, and indoor air quality improvements.",
   },
   {
     name: "Clearfield",
     description:
-      "Licensed HVAC service in Clearfield for repairs, replacements, and preventive maintenance.",
+      "Heating and cooling service in Clearfield — diagnostics, repairs, and new equipment when it is time.",
   },
   {
     name: "Syracuse",
     description:
-      "Heating and cooling experts serving Syracuse with same-day appointments when available.",
+      "Syracuse homeowners can call for repairs, installations, and maintenance when schedules allow.",
   },
   {
     name: "Woods Cross",
     description:
-      "Local HVAC support in Woods Cross — installations, repairs, and annual maintenance plans.",
+      "Repairs, new installations, and routine tune-ups for homes in Woods Cross and surrounding streets.",
   },
 ];

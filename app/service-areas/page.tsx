@@ -10,24 +10,26 @@ import { COMPANY_NAME, SERVICE_AREA } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Service Areas",
   description:
-    "HVAC repair, installation, and maintenance in Davis County, Utah. Serving Bountiful, Layton, Kaysville, Farmington, Centerville, Clearfield, Syracuse, and Woods Cross.",
+    "HVAC service throughout Davis County, Utah — including Bountiful, Layton, Kaysville, Farmington, and nearby communities.",
 };
 
 export default function ServiceAreasPage() {
   return (
     <>
       <PageHero
-        eyebrow="Local HVAC Service"
-        title="HVAC Service Areas in Davis County"
-        description={`${COMPANY_NAME} provides heating and cooling service throughout ${SERVICE_AREA}. From emergency repairs to new installations, we're your local comfort experts.`}
+        eyebrow="Where We Work"
+        title="HVAC Service Throughout Davis County"
+        description={`${COMPANY_NAME} helps homeowners across ${SERVICE_AREA} with repairs, installations, maintenance, and emergency heating and cooling problems.`}
+        primaryCta={{ label: "Contact Us", href: "/contact" }}
+        secondaryCta={{ label: "View Services", href: "/services" }}
       />
 
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            eyebrow="Primary Coverage"
-            title={`Serving ${SERVICE_AREA}`}
-            description="We focus on Davis County communities where we can provide fast response times and consistent, quality service for local homeowners."
+            eyebrow="Cities We Serve"
+            title={`Homeowners in ${SERVICE_AREA}`}
+            description="We regularly work in the communities below. If your city is not listed, contact us with your address — we may still be able to help."
           />
           <CityCardsGrid cities={davisCountyCities} />
         </div>
@@ -37,38 +39,36 @@ export default function ServiceAreasPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <SectionHeader
-              eyebrow="Local HVAC Experts"
-              title="Heating & Cooling You Can Count On"
+              eyebrow="Local Service"
+              title="Heating & Cooling Close to Home"
             />
             <div className="mt-8 space-y-6 leading-relaxed text-slate-600">
               <p>
-                When your furnace stops working on a cold Utah night or your AC
-                fails during a summer heat wave, you need a local HVAC company
-                that responds quickly. {COMPANY_NAME} serves homeowners across
-                Davis County with licensed technicians, honest pricing, and
-                work you can trust.
+                When your furnace quits on a cold night or your AC stops on a hot
+                afternoon, you want a team that knows the area and can get to you
+                without a long wait. We focus on Davis County so we can serve
+                nearby homeowners consistently.
               </p>
               <p>
-                Our team handles everything from routine maintenance and filter
-                changes to full system replacements. Whether you&apos;re in
-                Bountiful, Layton, Kaysville, or any of the communities listed
-                above, we&apos;re ready to help restore comfort to your home.
+                From routine tune-ups to full system replacements, we handle the
+                work most homes need through the year. Whether you are in Bountiful,
+                Layton, Kaysville, or another community listed above, the next step
+                is the same: call or request an estimate and tell us what is going on.
               </p>
               <p>
-                Not sure if we serve your neighborhood?{" "}
+                Not sure we cover your neighborhood?{" "}
                 <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
-                  Contact us
+                  Send us your address
                 </Link>{" "}
-                with your address and we&apos;ll confirm coverage. You can also
-                explore our{" "}
+                and we will confirm. You can also browse our{" "}
                 <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
-                  full range of HVAC services
+                  services
                 </Link>{" "}
                 or learn about{" "}
                 <Link href="/financing" className="font-semibold text-sky-700 hover:text-sky-800">
-                  financing options
+                  financing
                 </Link>{" "}
-                for your next project.
+                for larger projects.
               </p>
             </div>
           </div>

@@ -5,11 +5,12 @@ import Hero from "@/components/Hero";
 import ReviewsSection from "@/components/ReviewsSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import { SERVICE_AREA } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Heating & Cooling Services | Free Estimates",
+  title: "Heating & Cooling | Free Estimates",
   description:
-    "Expert HVAC repair, installation, and maintenance. Licensed technicians, fast response, and honest pricing. Call for a free estimate today.",
+    `HVAC repair, installation, and maintenance for homeowners in ${SERVICE_AREA}. Call for a free estimate or ask about financing.`,
 };
 
 export default function Home() {

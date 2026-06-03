@@ -9,22 +9,23 @@ import {
   PHONE_HREF,
   SERVICE_AREA,
 } from "@/lib/constants";
+import { ESTIMATE_MAILTO } from "@/lib/links";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Call or email for a free HVAC estimate. Serving Davis County, Utah including Bountiful, Layton, Kaysville, and surrounding cities.",
+    "Call or email Altair Climate Control for a free HVAC estimate in Davis County, Utah. No obligation — we are happy to answer questions about repairs, installs, and financing.",
 };
 
 export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Get in Touch"
-        title="Contact Us for a Free Estimate"
-        description="Call for immediate help or send us a message to schedule service. We respond quickly and serve homeowners throughout the area."
+        eyebrow="Contact"
+        title="Get in Touch — We Are Here to Help"
+        description="Call if something is wrong right now. Email or request an estimate if you are planning ahead. Either way, there is no obligation to book work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: `Email ${EMAIL}`, href: `mailto:${EMAIL}` }}
+        secondaryCta={{ label: "Request Free Estimate", href: ESTIMATE_MAILTO }}
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -33,16 +34,16 @@ export default function ContactPage() {
             <div>
               <SectionHeader
                 eyebrow="Reach Us"
-                title="Call, Email, or Request a Quote"
-                description="We're here to help with repairs, maintenance, installations, and emergency service."
+                title="The Easiest Way to Reach Us"
+                description="Pick what works for you. If your heat or AC is out, calling is usually fastest."
               />
 
               <div className="mt-10 space-y-8">
                 <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <h2 className="text-lg font-semibold text-slate-900">Phone</h2>
                   <p className="mt-2 text-slate-600">
-                    For the fastest response — especially for urgent heating or
-                    cooling issues — call us directly.
+                    Best for urgent problems — no heat, no cooling, strange smells,
+                    or anything that worries you.
                   </p>
                   <a
                     href={PHONE_HREF}
@@ -55,7 +56,8 @@ export default function ContactPage() {
                 <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <h2 className="text-lg font-semibold text-slate-900">Email</h2>
                   <p className="mt-2 text-slate-600">
-                    Send project details, photos, or scheduling questions anytime.
+                    Send photos, your address, and a short description of the issue.
+                    We will reply with next steps.
                   </p>
                   <a
                     href={`mailto:${EMAIL}`}
@@ -67,16 +69,17 @@ export default function ContactPage() {
 
                 <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <h2 className="text-lg font-semibold text-slate-900">
-                    Service Area
+                    Service area
                   </h2>
                   <p className="mt-2 text-slate-600">
-                    We proudly serve {SERVICE_AREA} and surrounding communities.
+                    We serve homeowners throughout {SERVICE_AREA}. Not sure we cover
+                    your street? Call or email with your address and we will confirm.
                   </p>
                   <Link
                     href="/service-areas"
                     className="mt-4 inline-block font-semibold text-sky-700 hover:text-sky-800"
                   >
-                    View all service areas →
+                    View cities we serve →
                   </Link>
                 </article>
               </div>
@@ -92,7 +95,7 @@ export default function ContactPage() {
           <div className="grid gap-8 md:grid-cols-2">
             <article className="rounded-2xl border border-slate-200 bg-white p-8">
               <h2 className="text-xl font-bold text-slate-900">
-                Business Hours
+                Business hours
               </h2>
               <ul className="mt-6 space-y-3 text-slate-600">
                 <li className="flex justify-between gap-4">
@@ -109,34 +112,33 @@ export default function ContactPage() {
                 </li>
               </ul>
               <p className="mt-6 text-sm text-slate-500">
-                Hours are subject to change. Call ahead to confirm availability
-                for same-day appointments.
+                [Confirm hours and update if needed.] Call ahead for same-day
+                availability.
               </p>
             </article>
 
             <article className="rounded-2xl border border-amber-200 bg-amber-50 p-8">
               <h2 className="text-xl font-bold text-slate-900">
-                Emergency Service
+                After-hours emergencies
               </h2>
               <p className="mt-4 leading-relaxed text-slate-700">
-                No heat in the middle of winter? AC out during a heat wave? We
-                offer 24/7 emergency HVAC service for urgent situations. Call{" "}
+                No heat on a cold night or AC out in a heat wave? Call{" "}
                 <a href={PHONE_HREF} className="font-semibold text-sky-700 hover:text-sky-800">
                   {PHONE}
-                </a>{" "}
-                anytime — if we can&apos;t answer immediately, leave a message
-                and we&apos;ll return your call as soon as possible.
+                </a>
+                . If we cannot answer right away, leave a message with your name,
+                address, and what is happening — we will call back as soon as we can.
               </p>
               <p className="mt-4 text-sm text-slate-600">
-                Learn more about our{" "}
+                See our{" "}
                 <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
                   HVAC services
                 </Link>{" "}
                 or ask about{" "}
                 <Link href="/financing" className="font-semibold text-sky-700 hover:text-sky-800">
-                  financing options
-                </Link>
-                .
+                  financing
+                </Link>{" "}
+                when you speak with us.
               </p>
             </article>
           </div>

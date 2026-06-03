@@ -1,23 +1,23 @@
 const reasons = [
   {
-    title: "Licensed",
+    title: "We explain before we fix",
     description:
-      "Fully licensed and insured technicians who meet local code requirements on every job.",
+      "You hear what is wrong, what we recommend, and what it costs — before work begins.",
   },
   {
-    title: "Experienced",
+    title: "We respect your home",
     description:
-      "Seasoned HVAC professionals with hands-on experience on all major heating and cooling brands.",
+      "Work areas are protected, and we clean up when the job is finished.",
   },
   {
-    title: "Fast Response",
+    title: "We show up when we say we will",
     description:
-      "Same-day and emergency appointments when you need comfort restored quickly.",
+      "Clear scheduling and updates so you are not left wondering when help will arrive.",
   },
   {
-    title: "Honest Pricing",
+    title: "We serve Davis County",
     description:
-      "Clear, upfront estimates before work begins — no hidden fees or surprise charges.",
+      "Local heating and cooling service for the communities where we work every day.",
   },
 ];
 
@@ -27,14 +27,14 @@ export default function WhyChooseUs() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-sky-700">
-            Why Choose Us
+            Why Homeowners Call Us
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Trusted Local HVAC Experts
+            Straightforward Service You Can Count On
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            We treat every home with respect, transparency, and workmanship you
-            can count on year after year.
+            Good HVAC work is about more than tools — it is about communication,
+            showing up, and treating your home the way we would want ours treated.
           </p>
         </div>
 

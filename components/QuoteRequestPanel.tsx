@@ -8,8 +8,9 @@ export default function QuoteRequestPanel() {
         Request a Free Estimate
       </h2>
       <p className="mt-3 leading-relaxed text-slate-600">
-        Tell us about your project and we&apos;ll get back to you with pricing
-        and next steps. For faster service, call us directly.
+        Share your name, address, and what is going on with your system. There is
+        no obligation — we will reply with next steps or follow up by phone if
+        that is easier.
       </p>
       <a
         href={QUOTE_MAILTO}
@@ -18,11 +19,11 @@ export default function QuoteRequestPanel() {
         Email Your Request
       </a>
       <p className="mt-4 text-sm text-slate-500">
-        Your email app will open with a simple template. Send it to{" "}
+        Your email app opens with a short template. Send it to{" "}
         <a href={`mailto:${EMAIL}`} className="text-sky-700 hover:text-sky-800">
           {EMAIL}
         </a>
-        .
+        , or call if you would rather talk it through.
       </p>
     </section>
   );

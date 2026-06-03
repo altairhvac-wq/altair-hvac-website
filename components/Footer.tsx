@@ -18,8 +18,8 @@ export default function Footer() {
           <div>
             <p className="text-lg font-bold text-white">{COMPANY_NAME}</p>
             <p className="mt-3 text-sm leading-relaxed">
-              Licensed and insured heating and cooling professionals serving
-              the {SERVICE_AREA}. Comfort you can count on, year-round.
+              Heating and cooling for homeowners in {SERVICE_AREA}. Call for
+              repairs, installations, maintenance, and free estimates.
             </p>
           </div>
 

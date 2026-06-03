@@ -4,7 +4,7 @@ const services = [
   {
     title: "HVAC Repair",
     description:
-      "Same-day diagnostics and repairs for furnaces, AC units, heat pumps, and ductwork. We fix it right the first time.",
+      "Furnace, AC, and heat pump problems diagnosed and fixed. We tell you what we found before we start work.",
     icon: (
       <path
         strokeLinecap="round"
@@ -16,7 +16,7 @@ const services = [
   {
     title: "HVAC Installation",
     description:
-      "Energy-efficient system upgrades and new equipment installation. We help you choose the right unit for your space and budget.",
+      "When it is time for new equipment, we help you choose a system that fits your home and walk you through installation day.",
     icon: (
       <path
         strokeLinecap="round"
@@ -28,7 +28,7 @@ const services = [
   {
     title: "HVAC Maintenance",
     description:
-      "Seasonal tune-ups and preventive care to extend equipment life, lower energy bills, and prevent costly breakdowns.",
+      "Spring and fall tune-ups that catch worn parts early and keep your system ready for Utah weather.",
     icon: (
       <path
         strokeLinecap="round"
@@ -48,11 +48,12 @@ export default function ServicesSection() {
             Our Services
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Complete HVAC Solutions
+            Repairs, Installations &amp; Tune-Ups
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            From emergency repairs to planned maintenance, our team keeps your
-            indoor climate comfortable in every season.
+            Whether your system stopped working overnight or you are planning
+            ahead for the season, we handle the heating and cooling work most
+            homeowners need.
           </p>
         </div>
 
@@ -89,7 +90,7 @@ export default function ServicesSection() {
             href="/services"
             className="inline-flex items-center justify-center rounded-lg bg-sky-700 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-800"
           >
-            View All Services
+            See All Services &amp; Warning Signs
           </Link>
         </p>
       </div>

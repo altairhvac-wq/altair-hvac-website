@@ -1,59 +1,59 @@
 export const financingBenefits = [
   {
-    title: "Manageable monthly payments",
+    title: "Spread out the cost",
     description:
-      "Spread the cost of a new system or major repair over time instead of paying everything upfront.",
+      "Pay for equipment or a major project in monthly installments instead of all at once.",
   },
   {
-    title: "Quick approval process",
+    title: "Simple next steps",
     description:
-      "Simple application steps so you can move forward with your project without long delays.",
+      "We walk you through how to apply and what information you may need — no pressure to decide on the spot.",
   },
   {
-    title: "Comfort without delay",
+    title: "Fix comfort sooner",
     description:
-      "Get the heating or cooling you need now — don't put off repairs or replacements because of budget timing.",
+      "If a broken system cannot wait, financing may help you address the problem without delaying months.",
   },
   {
-    title: "Options for different budgets",
+    title: "Plans for different budgets",
     description:
-      "Plans designed to fit a range of project sizes, from equipment upgrades to full system replacements.",
+      "Options vary by project and eligibility. We will discuss what may be available for your situation.",
   },
 ];
 
 export const financingUses = [
-  "New air conditioner or furnace installation",
+  "New air conditioner or furnace",
   "Full HVAC system replacement",
-  "Heat pump upgrades",
-  "Ductwork improvements",
+  "Heat pump installation or upgrade",
+  "Ductwork repairs or improvements",
   "Indoor air quality equipment",
-  "Major repairs when replacement makes more sense",
+  "Major repairs when replacement is the better long-term choice",
 ];
 
 export const financingFaqs = [
   {
     question: "How does HVAC financing work?",
     answer:
-      "Financing lets you pay for your heating or cooling project over time with scheduled monthly payments. We walk you through available options and help you find a plan that fits your budget before work begins.",
+      "Financing lets you pay for your project over time with set monthly payments. After we understand your project and provide an estimate, we can explain programs that may be available to qualified homeowners.",
   },
   {
     question: "What can I use financing for?",
     answer:
-      "Financing is typically available for new equipment installations, full system replacements, and qualifying major upgrades. Ask us about your specific project during your free estimate.",
+      "Financing is commonly used for new equipment, full system replacements, and qualifying upgrades. Ask us whether your specific project may qualify during your free estimate.",
   },
   {
     question: "Will applying affect my credit?",
     answer:
-      "A credit check is usually part of the approval process. We'll explain what to expect before you apply so there are no surprises.",
+      "Most financing applications involve a credit review. We will tell you what to expect before you apply so you can decide comfortably.",
   },
   {
     question: "How do I get started?",
     answer:
-      "Call us or request an estimate. Once we understand your project and provide pricing, we can discuss financing options that may be available to you.",
+      "Call us or request an estimate. Once we know your project and provide pricing, we can talk through financing options that may fit.",
   },
   {
-    question: "Do you work with a specific lender?",
+    question: "Who provides the financing?",
     answer:
-      "We partner with trusted financing providers to offer flexible plans for qualified homeowners. Contact us for current program details and eligibility requirements.",
+      "[Add lender or program name here.] Contact us for current program details, rates, and eligibility requirements.",
   },
 ];

@@ -1,45 +1,45 @@
 export const companyValues = [
   {
-    title: "Honest Pricing",
+    title: "Clear Pricing",
     description:
-      "Clear estimates before work begins. No surprise fees — you know what to expect before we start.",
+      "We explain costs before work starts. You should know what you are paying for and why.",
   },
   {
     title: "Clean Work",
     description:
-      "We protect your home, clean up when the job is done, and treat your property with respect.",
+      "We protect your floors and work areas and leave your home tidy when the job is done.",
   },
   {
-    title: "Reliable Communication",
+    title: "Straight Talk",
     description:
-      "We show up when we say we will, keep you informed, and answer your questions along the way.",
+      "We answer your questions in plain language — repair versus replace, timelines, and what to expect.",
   },
   {
-    title: "Quality Installs",
+    title: "Careful Installation",
     description:
-      "Proper sizing, code-compliant installation, and attention to detail on every system we put in.",
+      "New equipment is sized and installed with attention to detail so it performs as it should in your home.",
   },
 ];
 
 export const whyHomeownersChooseUs = [
   {
-    title: "Local & Responsive",
+    title: "Local Focus",
     description:
-      "We know Davis County homes and respond quickly when comfort can't wait.",
+      "We work in Davis County communities and understand Utah's hot summers and cold winters.",
   },
   {
-    title: "Licensed Technicians",
+    title: "Responsive Scheduling",
     description:
-      "Experienced, licensed professionals who work safely and stand behind their workmanship.",
+      "When your comfort is on the line, we do our best to get you on the schedule quickly.",
   },
   {
-    title: "Repairs & Replacements",
+    title: "Repair or Replace Guidance",
     description:
-      "From a quick fix to a full system upgrade, we help you choose the right solution for your home.",
+      "We help you weigh options honestly so you can choose what makes sense for your home and budget.",
   },
   {
-    title: "Financing Options",
+    title: "Financing Available",
     description:
-      "Flexible payment plans make it easier to invest in comfort when a major repair or replacement is needed.",
+      "Ask about payment plans during your estimate if a major repair or replacement is on the table.",
   },
 ];
