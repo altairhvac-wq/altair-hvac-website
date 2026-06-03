@@ -6,12 +6,17 @@ import PageHero from "@/components/PageHero";
 import ReviewsSection from "@/components/ReviewsSection";
 import SectionHeader from "@/components/SectionHeader";
 import { companyValues, whyHomeownersChooseUs } from "@/lib/content/values";
-import { COMPANY_NAME, SERVICE_AREA } from "@/lib/constants";
+import {
+  COMPANY_NAME,
+  LICENSING_STATEMENT,
+  SERVICE_AREA,
+  YEARS_IN_BUSINESS,
+} from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Meet the team behind Altair Climate Control. Local HVAC service in Davis County, Utah focused on clear communication and quality workmanship.",
+    "Altair Climate Control — a local HVAC company serving Roy, Layton, Clearfield, Bountiful, and Ogden, Utah. Clear communication and quality workmanship.",
 };
 
 export default function AboutPage() {
@@ -20,7 +25,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title={`About ${COMPANY_NAME}`}
-        description="We are a Davis County heating and cooling company built around doing the job right, keeping you informed, and treating your home with care."
+        description="A small, local heating and cooling company focused on clear communication, careful work, and treating your home with respect."
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -28,22 +33,26 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             <SectionHeader
               eyebrow="Who We Are"
-              title="Your Local Heating & Cooling Team"
+              title="Building Trust One Home at a Time"
             />
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-slate-600">
               <p>
-                {COMPANY_NAME} serves homeowners in {SERVICE_AREA}. Our focus is
-                simple: show up when we say we will, explain what is going on
-                with your system, and leave your home as clean as we found it.
+                {COMPANY_NAME} serves homeowners in {SERVICE_AREA} and the
+                surrounding communities. We have been in business for about{" "}
+                {YEARS_IN_BUSINESS} year — not decades — and we are upfront about
+                that. We are building our reputation through how we communicate,
+                the quality of our workmanship, and the experience you have from
+                the first call to the final walkthrough.
               </p>
               <p>
-                [Add a short company story here — how you started, who leads the
-                team, and what matters most to you when working in a
-                customer&apos;s home.]
+                Our focus is simple: show up when we say we will, explain what is
+                going on with your system in plain language, and leave your home
+                as clean as we found it. We do not use high-pressure sales tactics
+                or vague promises we cannot back up.
               </p>
               <p>
                 Utah summers and winters put real stress on furnaces and air
-                conditioners. We work in the same communities we serve, so we
+                conditioners. We work in the same neighborhoods we serve, so we
                 understand what local homes need when equipment fails or wears out.
               </p>
               <p>
@@ -57,17 +66,18 @@ export default function AboutPage() {
             <dl className="mt-10 grid gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:grid-cols-2">
               <div>
                 <dt className="text-sm font-semibold text-slate-900">
-                  License / credentials
+                  Licensing &amp; insurance
                 </dt>
-                <dd className="mt-1 text-slate-600">
-                  [Add license number, insurance details, or certifications here.]
-                </dd>
+                <dd className="mt-1 text-slate-600">{LICENSING_STATEMENT}</dd>
               </div>
               <div>
                 <dt className="text-sm font-semibold text-slate-900">
-                  Years in business
+                  Time in business
                 </dt>
-                <dd className="mt-1 text-slate-600">[Add year founded or years of experience.]</dd>
+                <dd className="mt-1 text-slate-600">
+                  About {YEARS_IN_BUSINESS} year. We are a newer company focused
+                  on earning trust through consistent, honest service.
+                </dd>
               </div>
             </dl>
           </div>

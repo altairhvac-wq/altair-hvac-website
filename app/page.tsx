@@ -10,7 +10,7 @@ import { SERVICE_AREA } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Heating & Cooling | Free Estimates",
   description:
-    `HVAC repair, installation, and maintenance for homeowners in ${SERVICE_AREA}. Call for a free estimate or ask about financing.`,
+    `HVAC repair, installation, and maintenance for homeowners in ${SERVICE_AREA}. Call for a free estimate — no obligation.`,
 };
 
 export default function Home() {

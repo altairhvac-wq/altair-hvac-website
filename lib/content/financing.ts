@@ -1,23 +1,23 @@
 export const financingBenefits = [
   {
-    title: "Spread out the cost",
+    title: "Planning ahead",
     description:
-      "Pay for equipment or a major project in monthly installments instead of all at once.",
+      "We are looking into programs that may help homeowners spread the cost of larger HVAC projects over time.",
   },
   {
-    title: "Simple next steps",
+    title: "Clear communication",
     description:
-      "We walk you through how to apply and what information you may need — no pressure to decide on the spot.",
+      "If we offer financing in the future, we will explain how it works in plain terms — no pressure to decide on the spot.",
   },
   {
-    title: "Fix comfort sooner",
+    title: "Comfort still comes first",
     description:
-      "If a broken system cannot wait, financing may help you address the problem without delaying months.",
+      "While we evaluate options, you can still call for a free estimate and talk through repair or replacement choices for your budget.",
   },
   {
-    title: "Plans for different budgets",
+    title: "Stay in the loop",
     description:
-      "Options vary by project and eligibility. We will discuss what may be available for your situation.",
+      "Ask us during your estimate if financing has become available. We will share what we know when programs are ready.",
   },
 ];
 
@@ -32,28 +32,28 @@ export const financingUses = [
 
 export const financingFaqs = [
   {
-    question: "How does HVAC financing work?",
+    question: "Do you offer financing today?",
     answer:
-      "Financing lets you pay for your project over time with set monthly payments. After we understand your project and provide an estimate, we can explain programs that may be available to qualified homeowners.",
+      "Not yet. We are currently evaluating financing options for future customers. We will update this page and let homeowners know when programs are available.",
   },
   {
-    question: "What can I use financing for?",
+    question: "Why are you looking into financing?",
     answer:
-      "Financing is commonly used for new equipment, full system replacements, and qualifying upgrades. Ask us whether your specific project may qualify during your free estimate.",
+      "A new furnace or AC is a major expense. If we add financing later, it may help some homeowners address comfort problems without paying everything at once.",
   },
   {
-    question: "Will applying affect my credit?",
+    question: "What can I do in the meantime?",
     answer:
-      "Most financing applications involve a credit review. We will tell you what to expect before you apply so you can decide comfortably.",
+      "Call us or request a free estimate. We will explain repair and replacement options, costs, and timing so you can plan what works for your home and budget.",
   },
   {
-    question: "How do I get started?",
+    question: "Will you announce when financing is ready?",
     answer:
-      "Call us or request an estimate. Once we know your project and provide pricing, we can talk through financing options that may fit.",
+      "Yes. When we select a program, we will share details during estimates and update this page. You can also ask us on the phone anytime.",
   },
   {
-    question: "Who provides the financing?",
+    question: "Can I still get an estimate without financing?",
     answer:
-      "[Add lender or program name here.] Contact us for current program details, rates, and eligibility requirements.",
+      "Absolutely. Estimates are free and there is no obligation. We are happy to answer questions about repairs, installs, and maintenance either way.",
   },
 ];

@@ -25,7 +25,7 @@ export const whyHomeownersChooseUs = [
   {
     title: "Local Focus",
     description:
-      "We work in Davis County communities and understand Utah's hot summers and cold winters.",
+      "We work in Roy, Layton, Clearfield, Bountiful, Ogden, and surrounding communities — and we know Utah's hot summers and cold winters.",
   },
   {
     title: "Responsive Scheduling",
@@ -38,8 +38,8 @@ export const whyHomeownersChooseUs = [
       "We help you weigh options honestly so you can choose what makes sense for your home and budget.",
   },
   {
-    title: "Financing Available",
+    title: "No-Pressure Estimates",
     description:
-      "Ask about payment plans during your estimate if a major repair or replacement is on the table.",
+      "We walk you through what we find and what it may cost. You decide when — or whether — to move forward.",
   },
 ];

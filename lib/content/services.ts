@@ -66,9 +66,9 @@ export const services: Service[] = [
   {
     title: "Emergency Service",
     description:
-      "When comfort cannot wait, call us for urgent heating or cooling problems — especially in extreme weather.",
+      "When comfort cannot wait, call us for urgent heating or cooling problems. We will let you know our current availability.",
     whyItMatters:
-      "A failed furnace on a cold night or a dead AC during a heat wave needs attention now, not next week.",
+      "A failed furnace on a cold night or a dead AC during a heat wave needs attention as soon as possible. Availability depends on the day — call and we will be upfront about timing.",
     signs: [
       "No heat in winter",
       "No cooling during hot weather",

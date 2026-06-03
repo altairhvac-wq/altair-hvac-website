@@ -10,12 +10,12 @@ import {
   financingFaqs,
   financingUses,
 } from "@/lib/content/financing";
-import { PHONE_HREF } from "@/lib/constants";
+import { FINANCING_STATEMENT, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "HVAC Financing",
   description:
-    "Pay for HVAC repairs and installations over time. Learn how financing works and ask about options during your free estimate in Davis County, Utah.",
+    `Altair Climate Control is evaluating financing options for future customers in ${SERVICE_AREA}. Learn more and request a free estimate.`,
 };
 
 export default function FinancingPage() {
@@ -23,8 +23,8 @@ export default function FinancingPage() {
     <>
       <PageHero
         eyebrow="Payment Options"
-        title="Financing for HVAC Repairs & Installations"
-        description="A new furnace or AC is a major expense. Financing can spread the cost into monthly payments so you can fix comfort problems sooner — we will explain your options clearly during your estimate."
+        title="Financing — Not Available Yet"
+        description={`${FINANCING_STATEMENT} We will share details here and during estimates when programs are ready.`}
         primaryCta={{ label: "Request Free Estimate", href: "/contact" }}
         secondaryCta={{ label: "Call Us", href: PHONE_HREF }}
       />
@@ -33,9 +33,9 @@ export default function FinancingPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeader
-              eyebrow="Pay Over Time"
-              title="You Should Not Have to Put Off Comfort"
-              description="If your system failed or repairs are adding up, financing may help you move forward without paying everything at once. Approval and terms depend on the program — we walk you through it step by step."
+              eyebrow="Where We Stand Today"
+              title="You Can Still Plan Your Project"
+              description="A new furnace or AC is a major expense. We are researching financing programs that may help some homeowners spread costs over time — but we do not offer financing right now. You can still get a free estimate and talk through options that fit your budget today."
               centered
             />
           </div>
@@ -43,8 +43,8 @@ export default function FinancingPage() {
       </section>
 
       <FeatureGrid
-        eyebrow="Why Homeowners Ask About Financing"
-        title="How Financing Can Help"
+        eyebrow="What We Are Working Toward"
+        title="Why We Are Looking Into Financing"
         items={financingBenefits}
         centered
         variant="slate"
@@ -53,9 +53,9 @@ export default function FinancingPage() {
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            eyebrow="Common Uses"
-            title="What Homeowners Often Finance"
-            description="These are typical projects — ask us whether yours may qualify:"
+            eyebrow="Future Uses"
+            title="Projects Homeowners Often Want to Finance"
+            description="If we add financing later, these are typical projects homeowners ask about:"
           />
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
             {financingUses.map((use) => (
@@ -74,11 +74,11 @@ export default function FinancingPage() {
             ))}
           </ul>
           <p className="mt-10 text-slate-600">
-            Ready to talk numbers?{" "}
+            Need help now without financing?{" "}
             <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
               Request a free estimate
             </Link>{" "}
-            and mention financing when we follow up. Browse our{" "}
+            and we will walk you through repair and replacement options. Browse our{" "}
             <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
               services
             </Link>{" "}
@@ -90,7 +90,7 @@ export default function FinancingPage() {
       <FAQSection
         eyebrow="Questions Homeowners Ask"
         title="Financing FAQ"
-        description="Straight answers about paying for HVAC work over time."
+        description="Straight answers about where we are today and what to expect later."
         items={financingFaqs}
       />
 

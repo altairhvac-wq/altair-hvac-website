@@ -10,7 +10,7 @@ import { COMPANY_NAME, SERVICE_AREA } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Service Areas",
   description:
-    "HVAC service throughout Davis County, Utah — including Bountiful, Layton, Kaysville, Farmington, and nearby communities.",
+    "HVAC service in Roy, Layton, Clearfield, Bountiful, Ogden, Utah, and surrounding communities. Repairs, installations, and maintenance.",
 };
 
 export default function ServiceAreasPage() {
@@ -18,8 +18,8 @@ export default function ServiceAreasPage() {
     <>
       <PageHero
         eyebrow="Where We Work"
-        title="HVAC Service Throughout Davis County"
-        description={`${COMPANY_NAME} helps homeowners across ${SERVICE_AREA} with repairs, installations, maintenance, and emergency heating and cooling problems.`}
+        title="Heating & Cooling Near You"
+        description={`${COMPANY_NAME} helps homeowners in ${SERVICE_AREA} and nearby communities with repairs, installations, maintenance, and urgent comfort problems.`}
         primaryCta={{ label: "Contact Us", href: "/contact" }}
         secondaryCta={{ label: "View Services", href: "/services" }}
       />
@@ -28,8 +28,8 @@ export default function ServiceAreasPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Cities We Serve"
-            title={`Homeowners in ${SERVICE_AREA}`}
-            description="We regularly work in the communities below. If your city is not listed, contact us with your address — we may still be able to help."
+            title="Primary Service Areas"
+            description="We regularly work in the communities below. We also serve many surrounding neighborhoods — if your city is not listed, contact us with your address and we will let you know."
           />
           <CityCardsGrid cities={davisCountyCities} />
         </div>
@@ -46,13 +46,21 @@ export default function ServiceAreasPage() {
               <p>
                 When your furnace quits on a cold night or your AC stops on a hot
                 afternoon, you want a team that knows the area and can get to you
-                without a long wait. We focus on Davis County so we can serve
-                nearby homeowners consistently.
+                without a long wait. We focus on northern Utah so we can serve
+                nearby homeowners consistently — not spread ourselves too thin
+                across the state.
+              </p>
+              <p>
+                Roy, Layton, Clearfield, Bountiful, and Ogden are where we spend
+                most of our time, but your home does not have to sit inside a city
+                limit for us to help. Many homeowners in Syracuse, Kaysville,
+                Farmington, Centerville, and other nearby towns are within reach.
+                The best way to know for sure is to call or send your address.
               </p>
               <p>
                 From routine tune-ups to full system replacements, we handle the
-                work most homes need through the year. Whether you are in Bountiful,
-                Layton, Kaysville, or another community listed above, the next step
+                work most homes need through the year. Whether you are in Roy,
+                Ogden, or a community just outside our main list, the next step
                 is the same: call or request an estimate and tell us what is going on.
               </p>
               <p>
@@ -63,12 +71,8 @@ export default function ServiceAreasPage() {
                 and we will confirm. You can also browse our{" "}
                 <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
                   services
-                </Link>{" "}
-                or learn about{" "}
-                <Link href="/financing" className="font-semibold text-sky-700 hover:text-sky-800">
-                  financing
-                </Link>{" "}
-                for larger projects.
+                </Link>
+                .
               </p>
             </div>
           </div>

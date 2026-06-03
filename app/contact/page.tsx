@@ -4,7 +4,9 @@ import PageHero from "@/components/PageHero";
 import QuoteRequestPanel from "@/components/QuoteRequestPanel";
 import SectionHeader from "@/components/SectionHeader";
 import {
+  BUSINESS_HOURS,
   EMAIL,
+  EMERGENCY_STATEMENT,
   PHONE,
   PHONE_HREF,
   SERVICE_AREA,
@@ -14,7 +16,7 @@ import { ESTIMATE_MAILTO } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Call or email Altair Climate Control for a free HVAC estimate in Davis County, Utah. No obligation — we are happy to answer questions about repairs, installs, and financing.",
+    "Call or email Altair Climate Control for a free HVAC estimate in Roy, Layton, Clearfield, Bountiful, and Ogden, Utah. No obligation — we are happy to answer your questions.",
 };
 
 export default function ContactPage() {
@@ -22,8 +24,8 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Get in Touch — We Are Here to Help"
-        description="Call if something is wrong right now. Email or request an estimate if you are planning ahead. Either way, there is no obligation to book work."
+        title="Get in Touch — No Pressure"
+        description="Call if something feels urgent. Email or request an estimate if you are planning ahead. Either way, there is no obligation to book work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
         secondaryCta={{ label: "Request Free Estimate", href: ESTIMATE_MAILTO }}
       />
@@ -34,16 +36,16 @@ export default function ContactPage() {
             <div>
               <SectionHeader
                 eyebrow="Reach Us"
-                title="The Easiest Way to Reach Us"
-                description="Pick what works for you. If your heat or AC is out, calling is usually fastest."
+                title="Pick What Works for You"
+                description="There is no sales script on the other end. Tell us what is going on and we will help you figure out the next step."
               />
 
               <div className="mt-10 space-y-8">
                 <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <h2 className="text-lg font-semibold text-slate-900">Phone</h2>
                   <p className="mt-2 text-slate-600">
-                    Best for urgent problems — no heat, no cooling, strange smells,
-                    or anything that worries you.
+                    Best when you want to talk it through — no heat, no cooling,
+                    strange smells, or anything that worries you.
                   </p>
                   <a
                     href={PHONE_HREF}
@@ -57,7 +59,7 @@ export default function ContactPage() {
                   <h2 className="text-lg font-semibold text-slate-900">Email</h2>
                   <p className="mt-2 text-slate-600">
                     Send photos, your address, and a short description of the issue.
-                    We will reply with next steps.
+                    We will reply with next steps when we can.
                   </p>
                   <a
                     href={`mailto:${EMAIL}`}
@@ -72,8 +74,9 @@ export default function ContactPage() {
                     Service area
                   </h2>
                   <p className="mt-2 text-slate-600">
-                    We serve homeowners throughout {SERVICE_AREA}. Not sure we cover
-                    your street? Call or email with your address and we will confirm.
+                    We regularly serve homeowners in {SERVICE_AREA}, plus
+                    surrounding communities. Not sure we cover your street? Call
+                    or email with your address and we will confirm.
                   </p>
                   <Link
                     href="/service-areas"
@@ -99,12 +102,10 @@ export default function ContactPage() {
               </h2>
               <ul className="mt-6 space-y-3 text-slate-600">
                 <li className="flex justify-between gap-4">
-                  <span>Monday – Friday</span>
-                  <span className="font-medium text-slate-900">8:00 AM – 6:00 PM</span>
-                </li>
-                <li className="flex justify-between gap-4">
-                  <span>Saturday</span>
-                  <span className="font-medium text-slate-900">9:00 AM – 2:00 PM</span>
+                  <span>{BUSINESS_HOURS.days}</span>
+                  <span className="font-medium text-slate-900">
+                    {BUSINESS_HOURS.time}
+                  </span>
                 </li>
                 <li className="flex justify-between gap-4">
                   <span>Sunday</span>
@@ -112,17 +113,17 @@ export default function ContactPage() {
                 </li>
               </ul>
               <p className="mt-6 text-sm text-slate-500">
-                [Confirm hours and update if needed.] Call ahead for same-day
-                availability.
+                Call ahead to confirm same-day availability. We will be honest
+                about what we can fit on the schedule.
               </p>
             </article>
 
             <article className="rounded-2xl border border-amber-200 bg-amber-50 p-8">
               <h2 className="text-xl font-bold text-slate-900">
-                After-hours emergencies
+                Urgent heating or cooling issues
               </h2>
               <p className="mt-4 leading-relaxed text-slate-700">
-                No heat on a cold night or AC out in a heat wave? Call{" "}
+                {EMERGENCY_STATEMENT} Call{" "}
                 <a href={PHONE_HREF} className="font-semibold text-sky-700 hover:text-sky-800">
                   {PHONE}
                 </a>
@@ -134,9 +135,9 @@ export default function ContactPage() {
                 <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
                   HVAC services
                 </Link>{" "}
-                or ask about{" "}
+                or learn about{" "}
                 <Link href="/financing" className="font-semibold text-sky-700 hover:text-sky-800">
-                  financing
+                  payment options we are exploring
                 </Link>{" "}
                 when you speak with us.
               </p>

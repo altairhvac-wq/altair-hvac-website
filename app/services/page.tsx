@@ -13,7 +13,7 @@ import { ESTIMATE_MAILTO } from "@/lib/links";
 export const metadata: Metadata = {
   title: "HVAC Services",
   description:
-    "AC repair, furnace repair, installation, maintenance, emergency service, and indoor air quality for homeowners in Davis County, Utah.",
+    `AC repair, furnace repair, installation, maintenance, and indoor air quality for homeowners in ${SERVICE_AREA}.`,
 };
 
 export default function ServicesPage() {
@@ -22,7 +22,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow={SERVICE_AREA}
         title="Heating & Cooling Services for Your Home"
-        description="From a broken AC in July to a furnace that will not start in January, we help Davis County homeowners get comfortable again — with clear answers and careful work."
+        description="From a broken AC in July to a furnace that will not start in January, we help local homeowners get comfortable again — with clear answers and careful work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
         secondaryCta={{ label: "Request Free Estimate", href: ESTIMATE_MAILTO }}
       />

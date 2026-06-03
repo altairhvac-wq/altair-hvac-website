@@ -30,8 +30,9 @@ export default function ReviewsSection() {
             What to Expect When You Call
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Every home is different. These are the standards we aim for on every
-            visit — from the first call to the final walkthrough.
+            We are a newer local company building our reputation one homeowner at
+            a time. These are the standards we aim for on every visit — from the
+            first call to the final walkthrough.
           </p>
         </div>
 
@@ -52,8 +53,8 @@ export default function ReviewsSection() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-slate-500">
-          [Add real customer reviews or a link to your Google Business profile
-          when available.]
+          Customer reviews and a Google Business profile link can be added here
+          when the owner is ready to share them publicly.
         </p>
 
         <p className="mt-8 text-center">

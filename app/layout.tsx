@@ -11,7 +11,7 @@ const geistSans = Geist({
   display: "swap",
 });
 
-const siteDescription = `HVAC repair, installation, and maintenance for homeowners in ${SERVICE_AREA}. Free estimates — call or ask about financing.`;
+const siteDescription = `HVAC repair, installation, and maintenance for homeowners in ${SERVICE_AREA}. Free estimates — call or email, no obligation.`;
 
 export const metadata: Metadata = {
   title: {
@@ -46,7 +46,13 @@ const localBusinessJsonLd = {
   description: siteDescription,
   telephone: PHONE,
   email: EMAIL,
-  areaServed: SERVICE_AREA,
+  areaServed: [
+    "Roy, Utah",
+    "Layton, Utah",
+    "Clearfield, Utah",
+    "Bountiful, Utah",
+    "Ogden, Utah",
+  ],
   url: "https://altairhvac.com",
 };
 

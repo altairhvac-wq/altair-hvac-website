@@ -1,3 +1,5 @@
+import { SERVICE_AREA } from "@/lib/constants";
+
 const reasons = [
   {
     title: "We explain before we fix",
@@ -15,9 +17,8 @@ const reasons = [
       "Clear scheduling and updates so you are not left wondering when help will arrive.",
   },
   {
-    title: "We serve Davis County",
-    description:
-      "Local heating and cooling service for the communities where we work every day.",
+    title: "We work where you live",
+    description: `Local heating and cooling service for homeowners in ${SERVICE_AREA} and surrounding communities.`,
   },
 ];
 

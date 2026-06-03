@@ -1,4 +1,9 @@
-import { PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
+import {
+  EMERGENCY_STATEMENT,
+  PHONE,
+  PHONE_HREF,
+  SERVICE_AREA,
+} from "@/lib/constants";
 import { ESTIMATE_MAILTO } from "@/lib/links";
 
 export default function Hero() {
@@ -15,7 +20,8 @@ export default function Hero() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
           When your furnace or AC acts up, you need someone who answers the phone,
           explains your options clearly, and does careful work. That is how we
-          serve homeowners across Davis County.
+          serve homeowners in Roy, Layton, Clearfield, Bountiful, Ogden, and
+          nearby communities.
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
           <a
@@ -38,13 +44,14 @@ export default function Hero() {
           </li>
           <li className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-400" aria-hidden />
-            Emergency help available
+            Mon–Sat, 7:30 AM – 6:00 PM
           </li>
           <li className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-400" aria-hidden />
-            Financing options
+            Urgent issues — call for availability
           </li>
         </ul>
+        <p className="mt-6 max-w-2xl text-sm text-slate-400">{EMERGENCY_STATEMENT}</p>
       </div>
     </section>
   );
