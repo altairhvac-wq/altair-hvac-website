@@ -1,0 +1,55 @@
+import { EMAIL, PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
+
+const estimateMailto = `mailto:${EMAIL}?subject=${encodeURIComponent("Free Estimate Request")}`;
+
+export default function ContactCTA() {
+  return (
+    <section id="contact" className="bg-slate-900 py-16 text-white sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-sky-400">
+            Contact Us
+          </p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+            Get Your Free Estimate Today
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-slate-300">
+            Call now for immediate help or request a no-obligation quote. We
+            respond quickly and serve the {SERVICE_AREA}.
+          </p>
+
+          <p className="mt-8">
+            <a
+              href={PHONE_HREF}
+              className="text-3xl font-bold tracking-tight text-white transition-colors hover:text-sky-300 sm:text-4xl"
+            >
+              {PHONE}
+            </a>
+          </p>
+
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href={PHONE_HREF}
+              className="inline-flex w-full items-center justify-center rounded-lg bg-sky-500 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-400 sm:w-auto"
+            >
+              Call Now
+            </a>
+            <a
+              href={estimateMailto}
+              className="inline-flex w-full items-center justify-center rounded-lg border-2 border-slate-600 px-8 py-4 text-base font-semibold text-white transition-colors hover:border-slate-500 hover:bg-slate-800 sm:w-auto"
+            >
+              Request Free Estimate
+            </a>
+          </div>
+
+          <p className="mt-8 text-sm text-slate-500">
+            Prefer email?{" "}
+            <a href={`mailto:${EMAIL}`} className="text-sky-400 hover:text-sky-300">
+              {EMAIL}
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
