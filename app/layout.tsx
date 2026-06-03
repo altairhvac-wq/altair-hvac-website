@@ -11,8 +11,7 @@ const geistSans = Geist({
   display: "swap",
 });
 
-const siteDescription =
-  "Licensed HVAC repair, installation, and maintenance. Fast response, honest pricing, and free estimates. Serving the Greater Metro Area.";
+const siteDescription = `Licensed HVAC repair, installation, and maintenance. Fast response, honest pricing, and free estimates. Serving ${SERVICE_AREA}.`;
 
 export const metadata: Metadata = {
   title: {

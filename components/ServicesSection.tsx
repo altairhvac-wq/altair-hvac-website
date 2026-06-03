@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const services = [
   {
     title: "HVAC Repair",
@@ -81,6 +83,15 @@ export default function ServicesSection() {
             </article>
           ))}
         </div>
+
+        <p className="mt-12 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center justify-center rounded-lg bg-sky-700 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-800"
+          >
+            View All Services
+          </Link>
+        </p>
       </div>
     </section>
   );

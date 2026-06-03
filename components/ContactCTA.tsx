@@ -1,10 +1,10 @@
+import Link from "next/link";
 import { EMAIL, PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
-
-const estimateMailto = `mailto:${EMAIL}?subject=${encodeURIComponent("Free Estimate Request")}`;
+import { ESTIMATE_MAILTO } from "@/lib/links";
 
 export default function ContactCTA() {
   return (
-    <section id="contact" className="bg-slate-900 py-16 text-white sm:py-20">
+    <section className="bg-slate-900 py-16 text-white sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-sky-400">
@@ -34,17 +34,17 @@ export default function ContactCTA() {
             >
               Call Now
             </a>
-            <a
-              href={estimateMailto}
+            <Link
+              href="/contact"
               className="inline-flex w-full items-center justify-center rounded-lg border-2 border-slate-600 px-8 py-4 text-base font-semibold text-white transition-colors hover:border-slate-500 hover:bg-slate-800 sm:w-auto"
             >
               Request Free Estimate
-            </a>
+            </Link>
           </div>
 
           <p className="mt-8 text-sm text-slate-500">
             Prefer email?{" "}
-            <a href={`mailto:${EMAIL}`} className="text-sky-400 hover:text-sky-300">
+            <a href={ESTIMATE_MAILTO} className="text-sky-400 hover:text-sky-300">
               {EMAIL}
             </a>
           </p>

@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function FinancingCTA() {
   return (
-    <section id="financing" className="bg-sky-50 py-16 sm:py-20">
+    <section className="bg-sky-50 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-2xl bg-gradient-to-r from-sky-800 to-sky-700 px-8 py-12 text-white sm:px-12 sm:py-16">
           <div className="max-w-2xl">
@@ -15,12 +17,20 @@ export default function FinancingCTA() {
               approval — so you can get the system you need now and pay over
               time.
             </p>
-            <a
-              href="#contact"
-              className="mt-8 inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-sky-800 transition-colors hover:bg-sky-50"
-            >
-              Ask About Financing
-            </a>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-sky-800 transition-colors hover:bg-sky-50"
+              >
+                Ask About Financing
+              </Link>
+              <Link
+                href="/financing"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/10"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
         </div>
       </div>

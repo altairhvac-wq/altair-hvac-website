@@ -6,7 +6,7 @@ import {
   PHONE_HREF,
   SERVICE_AREA,
 } from "@/lib/constants";
-import { mainNavLinks } from "@/lib/navigation";
+import { footerNavLinks } from "@/lib/navigation";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -28,7 +28,7 @@ export default function Footer() {
               Quick Links
             </p>
             <ul className="mt-4 space-y-2">
-              {mainNavLinks.map((link) => (
+              {footerNavLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

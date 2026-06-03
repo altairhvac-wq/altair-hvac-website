@@ -1,19 +1,19 @@
 const reviews = [
   {
     name: "Sarah M.",
-    location: "Placeholder City",
+    location: "Bountiful, UT",
     rating: 5,
-    text: "Our AC went out on the hottest day of summer. Altair HVAC had a technician at our door within two hours. Professional, friendly, and fair pricing.",
+    text: "Our AC went out on the hottest day of summer. They had a technician at our door within two hours. Professional, friendly, and fair pricing.",
   },
   {
     name: "James T.",
-    location: "Placeholder City",
+    location: "Layton, UT",
     rating: 5,
     text: "They installed a new furnace last winter and walked us through every option. The crew was clean, on time, and the system runs perfectly.",
   },
   {
     name: "Linda K.",
-    location: "Placeholder City",
+    location: "Kaysville, UT",
     rating: 5,
     text: "We've used them for maintenance plans for three years. Always reliable, always honest. Highly recommend to anyone in the area.",
   },

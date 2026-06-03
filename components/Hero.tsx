@@ -1,6 +1,5 @@
-import { EMAIL, PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
-
-const estimateMailto = `mailto:${EMAIL}?subject=${encodeURIComponent("Free Estimate Request")}`;
+import { PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
+import { ESTIMATE_MAILTO } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -26,7 +25,7 @@ export default function Hero() {
             Call Now — {PHONE}
           </a>
           <a
-            href={estimateMailto}
+            href={ESTIMATE_MAILTO}
             className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:border-white/50 hover:bg-white/20"
           >
             Free Estimate
