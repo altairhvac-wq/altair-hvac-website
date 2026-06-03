@@ -1,5 +1,7 @@
-export const COMPANY_NAME = "Altair HVAC";
-export const PHONE = "(555) 123-4567";
-export const PHONE_HREF = "tel:+15551234567";
-export const EMAIL = "info@altairhvac.com";
-export const SERVICE_AREA = "Greater Metro Area";
+export const COMPANY_NAME = "Altair Climate Control";
+export const PHONE = "(385) 251-4990";
+export const PHONE_HREF = "tel:+3852514990";
+export const EMAIL = "altairhvac@gmail.com";
+export const SERVICE_AREA = "Davis County, Utah";
+
+
