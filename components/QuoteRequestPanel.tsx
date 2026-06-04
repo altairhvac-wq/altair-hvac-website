@@ -1,4 +1,6 @@
-import { EMAIL } from "@/lib/constants";
+import Button from "@/components/Button";
+import CtaTextLink from "@/components/CtaTextLink";
+import { EMAIL, PHONE, PHONE_HREF } from "@/lib/constants";
 import { QUOTE_MAILTO } from "@/lib/links";
 
 export default function QuoteRequestPanel() {
@@ -12,18 +14,16 @@ export default function QuoteRequestPanel() {
         no obligation — we will reply with next steps or follow up by phone if
         that is easier.
       </p>
-      <a
-        href={QUOTE_MAILTO}
-        className="mt-6 inline-flex items-center justify-center rounded-lg bg-sky-700 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-800"
-      >
-        Email Your Request
-      </a>
+      <div className="mt-6">
+        <Button href={QUOTE_MAILTO} variant="primary">
+          Email Your Request
+        </Button>
+      </div>
       <p className="mt-4 text-sm text-slate-500">
-        Your email app opens with a short template. Send it to{" "}
-        <a href={`mailto:${EMAIL}`} className="text-sky-700 hover:text-sky-800">
-          {EMAIL}
-        </a>
-        , or call if you would rather talk it through.
+        Your email app opens with a short template sent to{" "}
+        <CtaTextLink href={`mailto:${EMAIL}`}>{EMAIL}</CtaTextLink>. Prefer to
+        talk?{" "}
+        <CtaTextLink href={PHONE_HREF}>Call {PHONE}</CtaTextLink>.
       </p>
     </section>
   );

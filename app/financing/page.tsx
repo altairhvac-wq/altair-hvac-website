@@ -10,7 +10,7 @@ import {
   financingFaqs,
   financingUses,
 } from "@/lib/content/financing";
-import { FINANCING_STATEMENT, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
+import { FINANCING_STATEMENT, PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "HVAC Financing",
@@ -31,8 +31,8 @@ export default function FinancingPage() {
         eyebrow="Payment Options"
         title="Financing — Not Available Yet"
         description={`${FINANCING_STATEMENT} We will share details here and during estimates when programs are ready.`}
-        primaryCta={{ label: "Request Free Estimate", href: "/contact" }}
-        secondaryCta={{ label: "Call Us", href: PHONE_HREF }}
+        primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
+        secondaryCta={{ label: "Request free estimate", href: "/contact" }}
       />
 
       <section className="bg-white py-16 sm:py-20">

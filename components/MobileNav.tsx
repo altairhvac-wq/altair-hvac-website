@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Button from "@/components/Button";
 import { PHONE, PHONE_HREF } from "@/lib/constants";
 
 export type NavLink = {
@@ -35,13 +36,10 @@ export default function MobileNav({ links, isOpen, onClose }: MobileNavProps) {
             </Link>
           </li>
         ))}
-        <li>
-          <a
-            href={PHONE_HREF}
-            className="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-sky-700 px-4 py-3 text-sm font-semibold text-white hover:bg-sky-800"
-          >
+        <li className="mt-2">
+          <Button href={PHONE_HREF} variant="primary" size="nav" className="w-full">
             Call {PHONE}
-          </a>
+          </Button>
         </li>
       </ul>
     </nav>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Button from "@/components/Button";
 import MobileNav from "@/components/MobileNav";
 import { COMPANY_NAME, PHONE, PHONE_HREF } from "@/lib/constants";
 import { mainNavLinks } from "@/lib/navigation";
@@ -34,12 +35,15 @@ export default function Header() {
           ))}
         </nav>
 
-        <a
+        <Button
           href={PHONE_HREF}
-          className="hidden rounded-lg bg-sky-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-sky-800 sm:inline-flex"
+          variant="primary"
+          size="sm"
+          fullWidthMobile={false}
+          className="hidden sm:inline-flex"
         >
           Call {PHONE}
-        </a>
+        </Button>
 
         <button
           type="button"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import MobileStickyCallBar from "@/components/MobileStickyCallBar";
 import {
   COMPANY_NAME,
   EMAIL,
@@ -83,10 +84,11 @@ export default function RootLayout({
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" className="flex-1">
+        <main id="main-content" className="flex-1 pb-20 md:pb-0">
           {children}
         </main>
         <Footer />
+        <MobileStickyCallBar />
       </body>
     </html>
   );

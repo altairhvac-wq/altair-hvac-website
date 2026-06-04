@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "@/components/Button";
 
 const services = [
   {
@@ -85,14 +85,11 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <p className="mt-12 text-center">
-          <Link
-            href="/services"
-            className="inline-flex items-center justify-center rounded-lg bg-sky-700 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-sky-800"
-          >
+        <div className="mt-12 text-center">
+          <Button href="/services" variant="primary">
             See All Services &amp; Warning Signs
-          </Link>
-        </p>
+          </Button>
+        </div>
       </div>
     </section>
   );

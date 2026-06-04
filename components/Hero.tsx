@@ -1,8 +1,10 @@
+import Button from "@/components/Button";
+import CtaTextLink from "@/components/CtaTextLink";
 import {
-  EMERGENCY_STATEMENT,
   PHONE,
   PHONE_HREF,
   SERVICE_AREA,
+  EMERGENCY_STATEMENT,
 } from "@/lib/constants";
 import { ESTIMATE_MAILTO } from "@/lib/links";
 
@@ -24,18 +26,12 @@ export default function Hero() {
           nearby communities.
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-          <a
-            href={PHONE_HREF}
-            className="inline-flex items-center justify-center rounded-lg bg-sky-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-sky-900/30 transition-colors hover:bg-sky-400"
-          >
+          <Button href={PHONE_HREF} variant="primaryHero">
             Call {PHONE}
-          </a>
-          <a
-            href={ESTIMATE_MAILTO}
-            className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:border-white/50 hover:bg-white/20"
-          >
-            Request a Free Estimate
-          </a>
+          </Button>
+          <CtaTextLink href={ESTIMATE_MAILTO} variant="dark">
+            Request a free estimate →
+          </CtaTextLink>
         </div>
         <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
           <li className="flex items-center gap-2">

@@ -1,5 +1,6 @@
-import Link from "next/link";
-import { FINANCING_STATEMENT } from "@/lib/constants";
+import Button from "@/components/Button";
+import CtaTextLink from "@/components/CtaTextLink";
+import { FINANCING_STATEMENT, PHONE, PHONE_HREF } from "@/lib/constants";
 
 export default function FinancingCTA() {
   return (
@@ -14,24 +15,24 @@ export default function FinancingCTA() {
               Financing — Coming When We Are Ready
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-sky-100">
-              {FINANCING_STATEMENT} In the meantime, request a free estimate and
-              we will walk you through repair and replacement options for your
+              {FINANCING_STATEMENT} In the meantime, call us for a free estimate
+              and we will walk you through repair and replacement options for your
               budget.
             </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/financing"
-                className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-semibold text-sky-800 transition-colors hover:bg-sky-50"
-              >
-                Learn More
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/10"
-              >
-                Request a Free Estimate
-              </Link>
+            <div className="mt-8">
+              <Button href={PHONE_HREF} variant="primaryHero">
+                Call {PHONE}
+              </Button>
             </div>
+            <p className="mt-4 text-base text-sky-200">
+              <CtaTextLink href="/financing" variant="dark">
+                Learn more about financing
+              </CtaTextLink>
+              {" · "}
+              <CtaTextLink href="/contact" variant="dark">
+                Request a free estimate
+              </CtaTextLink>
+            </p>
           </div>
         </div>
       </div>

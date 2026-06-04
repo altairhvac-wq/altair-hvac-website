@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Button from "@/components/Button";
+import CtaTextLink from "@/components/CtaTextLink";
 import PageHero from "@/components/PageHero";
 import QuoteRequestPanel from "@/components/QuoteRequestPanel";
 import SectionHeader from "@/components/SectionHeader";
@@ -11,7 +13,6 @@ import {
   PHONE_HREF,
   SERVICE_AREA,
 } from "@/lib/constants";
-import { ESTIMATE_MAILTO } from "@/lib/links";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -33,7 +34,7 @@ export default function ContactPage() {
         title="Get in Touch — No Pressure"
         description="Call if something feels urgent. Email or request an estimate if you are planning ahead. Either way, there is no obligation to book work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Request Free Estimate", href: ESTIMATE_MAILTO }}
+        secondaryCta={{ label: "Request free estimate by email", href: "#estimate" }}
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -42,40 +43,36 @@ export default function ContactPage() {
             <div>
               <SectionHeader
                 eyebrow="Reach Us"
-                title="Pick What Works for You"
-                description="There is no sales script on the other end. Tell us what is going on and we will help you figure out the next step."
+                title="Call First — We Are Here to Help"
+                description="Most homeowners prefer a quick phone call. Tell us what is going on and we will help you figure out the next step."
               />
 
-              <div className="mt-10 space-y-8">
-                <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                  <h2 className="text-lg font-semibold text-slate-900">Phone</h2>
-                  <p className="mt-2 text-slate-600">
-                    Best when you want to talk it through — no heat, no cooling,
-                    strange smells, or anything that worries you.
-                  </p>
-                  <a
-                    href={PHONE_HREF}
-                    className="mt-4 inline-block text-2xl font-bold text-sky-700 transition-colors hover:text-sky-800"
-                  >
-                    {PHONE}
-                  </a>
-                </article>
+              <article className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-8">
+                <h2 className="text-lg font-semibold text-slate-900">Phone</h2>
+                <p className="mt-2 text-slate-600">
+                  Best when you want to talk it through — no heat, no cooling,
+                  strange smells, or anything that worries you.
+                </p>
+                <div className="mt-6">
+                  <Button href={PHONE_HREF} variant="primary">
+                    Call {PHONE}
+                  </Button>
+                </div>
+              </article>
 
-                <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <div className="mt-8 space-y-6">
+                <article className="rounded-2xl border border-slate-200 bg-white p-6">
                   <h2 className="text-lg font-semibold text-slate-900">Email</h2>
                   <p className="mt-2 text-slate-600">
                     Send photos, your address, and a short description of the issue.
                     We will reply with next steps when we can.
                   </p>
-                  <a
-                    href={`mailto:${EMAIL}`}
-                    className="mt-4 inline-block text-lg font-semibold text-sky-700 transition-colors hover:text-sky-800"
-                  >
-                    {EMAIL}
-                  </a>
+                  <p className="mt-4">
+                    <CtaTextLink href={`mailto:${EMAIL}`}>{EMAIL}</CtaTextLink>
+                  </p>
                 </article>
 
-                <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <article className="rounded-2xl border border-slate-200 bg-white p-6">
                   <h2 className="text-lg font-semibold text-slate-900">
                     Service area
                   </h2>
@@ -84,17 +81,21 @@ export default function ContactPage() {
                     surrounding communities. Not sure we cover your street? Call
                     or email with your address and we will confirm.
                   </p>
-                  <Link
-                    href="/service-areas"
-                    className="mt-4 inline-block font-semibold text-sky-700 hover:text-sky-800"
-                  >
-                    View cities we serve →
-                  </Link>
+                  <p className="mt-4">
+                    <Link
+                      href="/service-areas"
+                      className="font-semibold text-sky-700 hover:text-sky-800"
+                    >
+                      View cities we serve →
+                    </Link>
+                  </p>
                 </article>
               </div>
             </div>
 
-            <QuoteRequestPanel />
+            <div id="estimate">
+              <QuoteRequestPanel />
+            </div>
           </div>
         </div>
       </section>
@@ -129,11 +130,9 @@ export default function ContactPage() {
                 Urgent heating or cooling issues
               </h2>
               <p className="mt-4 leading-relaxed text-slate-700">
-                {EMERGENCY_STATEMENT} Call{" "}
-                <a href={PHONE_HREF} className="font-semibold text-sky-700 hover:text-sky-800">
-                  {PHONE}
-                </a>
-                . If we cannot answer right away, leave a message with your name,
+                {EMERGENCY_STATEMENT}{" "}
+                <CtaTextLink href={PHONE_HREF}>Call {PHONE}</CtaTextLink>.
+                If we cannot answer right away, leave a message with your name,
                 address, and what is happening — we will call back as soon as we can.
               </p>
               <p className="mt-4 text-sm text-slate-600">

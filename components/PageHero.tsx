@@ -1,3 +1,6 @@
+import Button from "@/components/Button";
+import CtaTextLink from "@/components/CtaTextLink";
+
 type PageHeroProps = {
   eyebrow?: string;
   title: string;
@@ -33,20 +36,14 @@ export default function PageHero({
         {(primaryCta || secondaryCta) && (
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             {primaryCta && (
-              <a
-                href={primaryCta.href}
-                className="inline-flex items-center justify-center rounded-lg bg-sky-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-sky-900/30 transition-colors hover:bg-sky-400"
-              >
+              <Button href={primaryCta.href} variant="primaryHero">
                 {primaryCta.label}
-              </a>
+              </Button>
             )}
             {secondaryCta && (
-              <a
-                href={secondaryCta.href}
-                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:border-white/50 hover:bg-white/20"
-              >
-                {secondaryCta.label}
-              </a>
+              <CtaTextLink href={secondaryCta.href} variant="dark">
+                {secondaryCta.label} →
+              </CtaTextLink>
             )}
           </div>
         )}
