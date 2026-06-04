@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
+  --foreground: #1c1917;
   --brand-primary: #0369a1;
   --brand-primary-dark: #075985;
   --brand-accent: #0ea5e9;
@@ -15,12 +15,33 @@
   --color-brand-dark: var(--brand-primary-dark);
   --color-brand-accent: var(--brand-accent);
   --font-sans: var(--font-geist-sans);
+  --font-family-display: var(--font-cormorant), ui-serif, Georgia, serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-family-display);
+}
+
+.hero-headline {
+  font-family: var(--font-family-display);
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.hero-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(214 211 209);
 }
 
 .sr-only {

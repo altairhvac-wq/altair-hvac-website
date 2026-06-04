@@ -18,7 +18,7 @@ function isExternalHref(href: string) {
 
 const variantStyles = {
   light: "text-sky-700 hover:text-sky-800",
-  dark: "text-sky-400 hover:text-sky-300",
+  dark: "text-stone-200 hover:text-white",
 } as const;
 
 export default function CtaTextLink({

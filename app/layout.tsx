@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Cormorant_Garamond, Geist } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MobileStickyCallBar from "@/components/MobileStickyCallBar";
@@ -15,6 +15,13 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["500", "600"],
   display: "swap",
 });
 
@@ -69,7 +76,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} scroll-smooth`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${cormorant.variable} scroll-smooth`}
+    >
       <body className="min-h-screen flex flex-col bg-white font-sans text-slate-900 antialiased">
         <script
           type="application/ld+json"

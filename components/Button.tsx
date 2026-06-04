@@ -5,7 +5,7 @@ const variantStyles = {
   primary:
     "bg-sky-700 text-white hover:bg-sky-800",
   primaryHero:
-    "bg-sky-500 text-white shadow-lg shadow-sky-900/30 hover:bg-sky-400",
+    "bg-white text-stone-900 shadow-lg shadow-black/25 hover:bg-stone-100",
   secondary:
     "border-2 border-slate-600 text-white hover:border-slate-500 hover:bg-slate-800",
   secondaryHero:

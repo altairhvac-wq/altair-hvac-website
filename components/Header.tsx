@@ -11,24 +11,24 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-stone-200/90 bg-white/[0.98] backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3.5 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-lg font-bold tracking-tight text-slate-900 sm:text-xl"
+          className="font-display text-xl font-semibold leading-none tracking-tight text-stone-900 sm:text-[1.35rem]"
         >
           {COMPANY_NAME}
         </Link>
 
         <nav
-          className="hidden items-center gap-6 md:flex"
+          className="hidden items-center gap-8 md:flex"
           aria-label="Main navigation"
         >
           {mainNavLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-sky-700"
+              className="text-[0.9375rem] font-medium tracking-wide text-stone-600 transition-colors hover:text-stone-900"
             >
               {link.label}
             </Link>
@@ -47,7 +47,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 p-2 text-slate-700 md:hidden"
+          className="inline-flex items-center justify-center rounded-lg border border-stone-200 p-2 text-stone-700 md:hidden"
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
