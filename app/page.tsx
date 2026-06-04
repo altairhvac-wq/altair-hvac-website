@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import ContactCTA from "@/components/ContactCTA";
+import FeaturedProjectsSection from "@/components/FeaturedProjectsSection";
 import FinancingCTA from "@/components/FinancingCTA";
 import Hero from "@/components/Hero";
 import ReviewsSection from "@/components/ReviewsSection";
 import ServicesSection from "@/components/ServicesSection";
+import WhatToExpectSection from "@/components/WhatToExpectSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { SERVICE_AREA } from "@/lib/constants";
 
@@ -24,6 +26,8 @@ export default function Home() {
     <>
       <Hero />
       <ServicesSection />
+      <FeaturedProjectsSection />
+      <WhatToExpectSection />
       <WhyChooseUs />
       <ReviewsSection />
       <FinancingCTA />
