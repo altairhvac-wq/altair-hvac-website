@@ -8,14 +8,14 @@ export type LeadSubmitResult =
   | { ok: false; error: string };
 
 /**
- * Server-side entry point for Altair OS. When `ALTAR_OS_LEAD_WEBHOOK_URL` is set,
+ * Server-side entry point for Altair OS. When `ALTAIR_OS_LEAD_WEBHOOK_URL` is set,
  * POST the structured payload; otherwise callers should use mailto on the client.
  */
 export async function submitEstimateLead(
   lead: EstimateLead,
 ): Promise<LeadSubmitResult> {
   const payload: EstimateLeadPayload = toEstimateLeadPayload(lead);
-  const webhookUrl = process.env.ALTAR_OS_LEAD_WEBHOOK_URL;
+  const webhookUrl = process.env.ALTAIR_OS_LEAD_WEBHOOK_URL;
 
   if (!webhookUrl) {
     return { ok: true, channel: "mailto-fallback" };
