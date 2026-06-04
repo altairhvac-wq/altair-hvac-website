@@ -8,7 +8,7 @@ import {
   EMERGENCY_STATEMENT,
 } from "@/lib/constants";
 import { HERO_IMAGES } from "@/lib/hero-images";
-import { ESTIMATE_MAILTO } from "@/lib/links";
+import { CONTACT_ESTIMATE_URL } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -32,7 +32,7 @@ export default function Hero() {
         <Button href={PHONE_HREF} variant="primaryHero">
           Call {PHONE}
         </Button>
-        <CtaTextLink href={ESTIMATE_MAILTO} variant="dark">
+        <CtaTextLink href={CONTACT_ESTIMATE_URL} variant="dark">
           Request your estimate →
         </CtaTextLink>
       </div>

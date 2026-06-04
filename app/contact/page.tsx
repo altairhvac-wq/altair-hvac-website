@@ -33,7 +33,7 @@ export default function ContactPage() {
         title="Get in Touch — No Pressure"
         description="Call if something feels urgent. Email or request an estimate if you are planning ahead. Either way, there is no obligation to book work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Request an estimate by email", href: "#estimate" }}
+        secondaryCta={{ label: "Request an estimate", href: "#estimate" }}
       />
 
       <section className="bg-white py-16 sm:py-20">

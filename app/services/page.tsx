@@ -8,7 +8,7 @@ import ServiceCardsGrid from "@/components/ServiceCardsGrid";
 import WhenToCallUs from "@/components/WhenToCallUs";
 import { services } from "@/lib/content/services";
 import { PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
-import { ESTIMATE_MAILTO } from "@/lib/links";
+import { CONTACT_ESTIMATE_URL } from "@/lib/links";
 
 export const metadata: Metadata = {
   title: "HVAC Services",
@@ -30,7 +30,7 @@ export default function ServicesPage() {
         title="Heating & Cooling Services for Your Home"
         description="From a broken AC in July to a furnace that will not start in January, we help local homeowners get comfortable again — with clear answers and careful work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Request an estimate by email", href: ESTIMATE_MAILTO }}
+        secondaryCta={{ label: "Request an estimate", href: CONTACT_ESTIMATE_URL }}
       />
 
       <section className="bg-white py-16 sm:py-20">

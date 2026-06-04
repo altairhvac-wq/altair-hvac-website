@@ -26,7 +26,7 @@ export default function ContactCTA() {
 
           <p className="mt-6 text-base text-stone-400">
             Prefer to write first?{" "}
-            <CtaTextLink href="/contact" variant="dark">
+            <CtaTextLink href="/contact#estimate" variant="dark">
               Request your estimate
             </CtaTextLink>
             {" · "}
