@@ -15,7 +15,7 @@ export default function FinancingCTA() {
               Financing — Coming When We Are Ready
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-sky-100">
-              {FINANCING_STATEMENT} In the meantime, call us for a free estimate
+              {FINANCING_STATEMENT} In the meantime, call us for an estimate
               and we will walk you through repair and replacement options for your
               budget.
             </p>
@@ -30,7 +30,7 @@ export default function FinancingCTA() {
               </CtaTextLink>
               {" · "}
               <CtaTextLink href="/contact" variant="dark">
-                Request a free estimate
+                Request your estimate
               </CtaTextLink>
             </p>
           </div>

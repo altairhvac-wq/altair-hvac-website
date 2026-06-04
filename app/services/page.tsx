@@ -30,7 +30,7 @@ export default function ServicesPage() {
         title="Heating & Cooling Services for Your Home"
         description="From a broken AC in July to a furnace that will not start in January, we help local homeowners get comfortable again — with clear answers and careful work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Request free estimate by email", href: ESTIMATE_MAILTO }}
+        secondaryCta={{ label: "Request an estimate by email", href: ESTIMATE_MAILTO }}
       />
 
       <section className="bg-white py-16 sm:py-20">

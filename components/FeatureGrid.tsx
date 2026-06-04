@@ -7,6 +7,7 @@ type FeatureGridProps = {
   items: { title: string; description: string }[];
   centered?: boolean;
   variant?: "white" | "slate";
+  numbered?: boolean;
 };
 
 export default function FeatureGrid({
@@ -16,12 +17,13 @@ export default function FeatureGrid({
   items,
   centered = false,
   variant = "white",
+  numbered = true,
 }: FeatureGridProps) {
   const bgClass = variant === "slate" ? "bg-slate-50" : "bg-white";
   const cardClass =
     variant === "slate"
       ? "rounded-2xl border border-slate-200 bg-white p-6 sm:p-8"
-      : "flex gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8";
+      : "rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8";
 
   return (
     <section className={`${bgClass} py-16 sm:py-20`}>
@@ -35,17 +37,14 @@ export default function FeatureGrid({
         <div
           className={`mt-12 grid gap-6 sm:grid-cols-2 ${centered ? "lg:grid-cols-2" : ""}`}
         >
-          {items.map((item) => (
+          {items.map((item, index) => (
             <article key={item.title} className={cardClass}>
-              {variant === "white" && (
-                <div
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-700 text-sm font-bold text-white"
-                  aria-hidden
-                >
-                  ✓
-                </div>
+              {numbered && (
+                <p className="text-sm font-semibold tabular-nums tracking-widest text-slate-400">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
               )}
-              <div>
+              <div className={numbered ? "mt-4 border-t border-slate-200 pt-6" : ""}>
                 <h3 className="text-lg font-semibold text-slate-900">
                   {item.title}
                 </h3>

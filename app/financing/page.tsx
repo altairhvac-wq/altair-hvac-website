@@ -32,7 +32,7 @@ export default function FinancingPage() {
         title="Financing — Not Available Yet"
         description={`${FINANCING_STATEMENT} We will share details here and during estimates when programs are ready.`}
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Request free estimate", href: "/contact" }}
+        secondaryCta={{ label: "Request your estimate", href: "/contact" }}
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -64,25 +64,22 @@ export default function FinancingPage() {
             description="If we add financing later, these are typical projects homeowners ask about:"
           />
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
-            {financingUses.map((use) => (
+            {financingUses.map((use, index) => (
               <li
                 key={use}
-                className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-700"
+                className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 text-slate-700"
               >
-                <span
-                  className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-sky-700 text-xs font-bold text-white"
-                  aria-hidden
-                >
-                  ✓
+                <span className="text-xs font-semibold tabular-nums tracking-widest text-slate-400">
+                  {String(index + 1).padStart(2, "0")}
                 </span>
-                {use}
+                <p className="mt-2">{use}</p>
               </li>
             ))}
           </ul>
           <p className="mt-10 text-slate-600">
             Need help now without financing?{" "}
             <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
-              Request a free estimate
+              Request your estimate
             </Link>{" "}
             and we will walk you through repair and replacement options. Browse our{" "}
             <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">

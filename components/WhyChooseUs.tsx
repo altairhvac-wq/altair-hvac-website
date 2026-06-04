@@ -40,18 +40,15 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2">
-          {reasons.map((reason) => (
-            <div
+          {reasons.map((reason, index) => (
+            <article
               key={reason.title}
-              className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8"
+              className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8"
             >
-              <div
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-700 text-sm font-bold text-white"
-                aria-hidden
-              >
-                ✓
-              </div>
-              <div>
+              <p className="text-sm font-semibold tabular-nums tracking-widest text-slate-400">
+                {String(index + 1).padStart(2, "0")}
+              </p>
+              <div className="mt-4 border-t border-slate-200 pt-6">
                 <h3 className="text-lg font-semibold text-slate-900">
                   {reason.title}
                 </h3>
@@ -59,7 +56,7 @@ export default function WhyChooseUs() {
                   {reason.description}
                 </p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

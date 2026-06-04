@@ -34,7 +34,7 @@ export default function ContactPage() {
         title="Get in Touch — No Pressure"
         description="Call if something feels urgent. Email or request an estimate if you are planning ahead. Either way, there is no obligation to book work."
         primaryCta={{ label: `Call ${PHONE}`, href: PHONE_HREF }}
-        secondaryCta={{ label: "Request free estimate by email", href: "#estimate" }}
+        secondaryCta={{ label: "Request an estimate by email", href: "#estimate" }}
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -125,11 +125,11 @@ export default function ContactPage() {
               </p>
             </article>
 
-            <article className="rounded-2xl border border-amber-200 bg-amber-50 p-8">
+            <article className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
               <h2 className="text-xl font-bold text-slate-900">
                 Urgent heating or cooling issues
               </h2>
-              <p className="mt-4 leading-relaxed text-slate-700">
+              <p className="mt-4 leading-relaxed text-slate-600">
                 {EMERGENCY_STATEMENT}{" "}
                 <CtaTextLink href={PHONE_HREF}>Call {PHONE}</CtaTextLink>.
                 If we cannot answer right away, leave a message with your name,

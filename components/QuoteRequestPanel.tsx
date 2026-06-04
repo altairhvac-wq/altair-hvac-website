@@ -7,7 +7,7 @@ export default function QuoteRequestPanel() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-slate-50 p-8 sm:p-10">
       <h2 className="text-2xl font-bold tracking-tight text-slate-900">
-        Request a Free Estimate
+        Request an Estimate
       </h2>
       <p className="mt-3 leading-relaxed text-slate-600">
         Share your name, address, and what is going on with your system. There is

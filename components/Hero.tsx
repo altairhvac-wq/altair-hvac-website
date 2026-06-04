@@ -30,13 +30,13 @@ export default function Hero() {
             Call {PHONE}
           </Button>
           <CtaTextLink href={ESTIMATE_MAILTO} variant="dark">
-            Request a free estimate →
+            Request your estimate →
           </CtaTextLink>
         </div>
         <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
           <li className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-400" aria-hidden />
-            Free estimates
+            Estimates at no charge
           </li>
           <li className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-400" aria-hidden />

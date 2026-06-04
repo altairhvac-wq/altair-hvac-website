@@ -120,7 +120,7 @@ export default function AboutPage() {
             <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
               get in touch
             </Link>{" "}
-            for a free estimate.
+            to request an estimate.
           </p>
         </div>
       </section>

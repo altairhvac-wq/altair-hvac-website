@@ -3,7 +3,6 @@ export type Service = {
   description: string;
   whyItMatters: string;
   signs: string[];
-  icon: "ac" | "furnace" | "install" | "maintenance" | "emergency" | "air-quality";
 };
 
 export const services: Service[] = [
@@ -19,7 +18,6 @@ export const services: Service[] = [
       "Water leaking near the indoor unit",
       "AC will not turn on",
     ],
-    icon: "ac",
   },
   {
     title: "Furnace Repair",
@@ -33,7 +31,6 @@ export const services: Service[] = [
       "Burning or unusual smells",
       "Pilot light or ignition issues",
     ],
-    icon: "furnace",
   },
   {
     title: "HVAC Installation",
@@ -47,7 +44,6 @@ export const services: Service[] = [
       "Uneven heating or cooling",
       "Repair costs approaching replacement value",
     ],
-    icon: "install",
   },
   {
     title: "Maintenance",
@@ -61,7 +57,6 @@ export const services: Service[] = [
       "Dust buildup around vents",
       "You want to avoid a mid-season breakdown",
     ],
-    icon: "maintenance",
   },
   {
     title: "Emergency Service",
@@ -75,7 +70,6 @@ export const services: Service[] = [
       "System shut off unexpectedly",
       "Safety concerns such as gas smell — call us and leave the area if needed",
     ],
-    icon: "emergency",
   },
   {
     title: "Indoor Air Quality",
@@ -89,7 +83,6 @@ export const services: Service[] = [
       "Allergy symptoms worse at home",
       "Musty odors from vents",
     ],
-    icon: "air-quality",
   },
 ];
 
