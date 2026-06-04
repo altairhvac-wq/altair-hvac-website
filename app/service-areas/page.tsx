@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import CityCardsGrid from "@/components/CityCardsGrid";
+import CtaTextLink from "@/components/CtaTextLink";
 import ContactCTA from "@/components/ContactCTA";
 import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
@@ -71,13 +71,9 @@ export default function ServiceAreasPage() {
               </p>
               <p>
                 Not sure we cover your neighborhood?{" "}
-                <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
-                  Send us your address
-                </Link>{" "}
-                and we will confirm. You can also browse our{" "}
-                <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
-                  services
-                </Link>
+                <CtaTextLink href="/contact">Send us your address</CtaTextLink> and
+                we will confirm. You can also browse our{" "}
+                <CtaTextLink href="/services">services</CtaTextLink>
                 .
               </p>
             </div>

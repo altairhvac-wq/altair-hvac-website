@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import ContactCTA from "@/components/ContactCTA";
+import CtaTextLink from "@/components/CtaTextLink";
 import FeatureGrid from "@/components/FeatureGrid";
 import PageHero from "@/components/PageHero";
 import ReviewsSection from "@/components/ReviewsSection";
@@ -113,13 +113,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-lg text-slate-600">
             See what we offer on our{" "}
-            <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
-              services page
-            </Link>{" "}
-            or{" "}
-            <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
-              get in touch
-            </Link>{" "}
+            <CtaTextLink href="/services">services page</CtaTextLink> or{" "}
+            <CtaTextLink href="/contact">get in touch</CtaTextLink>{" "}
             to request an estimate.
           </p>
         </div>

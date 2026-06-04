@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
     <section id="why-us" className="bg-slate-50 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-widest text-stone-600">
             Why Homeowners Call Us
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

@@ -3,7 +3,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 const variantStyles = {
   primary:
-    "bg-sky-700 text-white hover:bg-sky-800",
+    "bg-stone-900 text-white hover:bg-stone-800",
   primaryHero:
     "bg-white text-stone-900 shadow-lg shadow-black/25 hover:bg-stone-100",
   secondary:
@@ -13,7 +13,7 @@ const variantStyles = {
   outlineOnColor:
     "border-2 border-white/30 text-white hover:border-white/50 hover:bg-white/10",
   inverse:
-    "bg-white text-sky-800 hover:bg-sky-50",
+    "bg-white text-stone-900 hover:bg-stone-50",
 } as const;
 
 const sizeStyles = {

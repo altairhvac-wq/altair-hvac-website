@@ -29,7 +29,7 @@ export default function MobileNav({ links, isOpen, onClose }: MobileNavProps) {
           <li key={link.href}>
             <Link
               href={link.href}
-              className="block py-1 text-base font-medium text-slate-700 hover:text-sky-700"
+              className="block py-1 text-base font-medium text-stone-700 hover:text-stone-900"
               onClick={onClose}
             >
               {link.label}

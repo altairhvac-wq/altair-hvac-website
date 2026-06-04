@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Button from "@/components/Button";
 import CtaTextLink from "@/components/CtaTextLink";
 import PageHero from "@/components/PageHero";
@@ -82,12 +81,9 @@ export default function ContactPage() {
                     or email with your address and we will confirm.
                   </p>
                   <p className="mt-4">
-                    <Link
-                      href="/service-areas"
-                      className="font-semibold text-sky-700 hover:text-sky-800"
-                    >
+                    <CtaTextLink href="/service-areas">
                       View cities we serve →
-                    </Link>
+                    </CtaTextLink>
                   </p>
                 </article>
               </div>
@@ -137,13 +133,11 @@ export default function ContactPage() {
               </p>
               <p className="mt-4 text-sm text-slate-600">
                 See our{" "}
-                <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
-                  HVAC services
-                </Link>{" "}
-                or learn about{" "}
-                <Link href="/financing" className="font-semibold text-sky-700 hover:text-sky-800">
+                <CtaTextLink href="/services">HVAC services</CtaTextLink> or learn
+                about{" "}
+                <CtaTextLink href="/financing">
                   payment options we are exploring
-                </Link>{" "}
+                </CtaTextLink>{" "}
                 when you speak with us.
               </p>
             </article>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import CtaTextLink from "@/components/CtaTextLink";
 import { reviews, serviceProcessSteps } from "@/lib/content/reviews";
 
 export default function ReviewsSection() {
@@ -11,7 +11,7 @@ export default function ReviewsSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-sky-700">
+          <p className="text-sm font-semibold uppercase tracking-widest text-stone-600">
             {hasReviews ? "Customer Reviews" : "How We Work"}
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -66,13 +66,8 @@ export default function ReviewsSection() {
           </ol>
         )}
 
-        <p className="mt-8 text-center">
-          <Link
-            href="/about"
-            className="font-semibold text-sky-700 hover:text-sky-800"
-          >
-            Learn more about our team →
-          </Link>
+        <p className="mt-10 text-center">
+          <CtaTextLink href="/about">Learn more about our team →</CtaTextLink>
         </p>
       </div>
     </section>

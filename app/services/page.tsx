@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import ContactCTA from "@/components/ContactCTA";
+import CtaTextLink from "@/components/CtaTextLink";
 import FinancingCTA from "@/components/FinancingCTA";
 import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
@@ -45,13 +45,9 @@ export default function ServicesPage() {
           </div>
           <p className="mt-10 text-center text-slate-600">
             Not sure what you need?{" "}
-            <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
-              Contact us
-            </Link>{" "}
-            — describe the problem and we will point you in the right direction. See our{" "}
-            <Link href="/service-areas" className="font-semibold text-sky-700 hover:text-sky-800">
-              service areas
-            </Link>
+            <CtaTextLink href="/contact">Contact us</CtaTextLink> — describe the
+            problem and we will point you in the right direction. See our{" "}
+            <CtaTextLink href="/service-areas">service areas</CtaTextLink>
             .
           </p>
         </div>

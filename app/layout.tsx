@@ -89,12 +89,15 @@ export default function RootLayout({
         />
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-sky-700 focus:px-4 focus:py-2 focus:text-white"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-stone-900 focus:px-4 focus:py-2 focus:text-white"
         >
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" className="flex-1 pb-20 md:pb-0">
+        <main
+          id="main-content"
+          className="flex-1 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-0"
+        >
           {children}
         </main>
         <Footer />

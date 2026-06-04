@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import ContactCTA from "@/components/ContactCTA";
+import CtaTextLink from "@/components/CtaTextLink";
 import FAQSection from "@/components/FAQSection";
 import FeatureGrid from "@/components/FeatureGrid";
 import PageHero from "@/components/PageHero";
@@ -78,13 +78,9 @@ export default function FinancingPage() {
           </ul>
           <p className="mt-10 text-slate-600">
             Need help now without financing?{" "}
-            <Link href="/contact" className="font-semibold text-sky-700 hover:text-sky-800">
-              Request your estimate
-            </Link>{" "}
-            and we will walk you through repair and replacement options. Browse our{" "}
-            <Link href="/services" className="font-semibold text-sky-700 hover:text-sky-800">
-              services
-            </Link>{" "}
+            <CtaTextLink href="/contact">Request your estimate</CtaTextLink> and we
+            will walk you through repair and replacement options. Browse our{" "}
+            <CtaTextLink href="/services">services</CtaTextLink>{" "}
             to see what we can help with.
           </p>
         </div>

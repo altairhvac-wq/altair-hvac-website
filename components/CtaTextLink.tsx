@@ -17,7 +17,7 @@ function isExternalHref(href: string) {
 }
 
 const variantStyles = {
-  light: "text-sky-700 hover:text-sky-800",
+  light: "text-stone-700 hover:text-stone-900",
   dark: "text-stone-200 hover:text-white",
 } as const;
 
