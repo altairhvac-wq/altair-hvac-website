@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="After photo placeholder">
+  <rect width="800" height="600" fill="#1c1917"/>
+  <rect x="40" y="40" width="720" height="520" fill="none" stroke="#44403c" stroke-width="2"/>
+  <text x="400" y="290" text-anchor="middle" fill="#d6d3d1" font-family="system-ui, sans-serif" font-size="28" font-weight="600" letter-spacing="0.15em">AFTER</text>
+  <text x="400" y="330" text-anchor="middle" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="16">Project photo coming soon</text>
+</svg>
