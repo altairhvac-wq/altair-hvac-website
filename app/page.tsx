@@ -3,6 +3,7 @@ import ContactCTA from "@/components/ContactCTA";
 import FeaturedProjectsSection from "@/components/FeaturedProjectsSection";
 import FinancingCTA from "@/components/FinancingCTA";
 import Hero from "@/components/Hero";
+import InstantBudgetEstimatorSection from "@/components/InstantBudgetEstimatorSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhatToExpectSection from "@/components/WhatToExpectSection";
@@ -28,6 +29,7 @@ export default function Home() {
       <ServicesSection />
       <FeaturedProjectsSection />
       <WhatToExpectSection />
+      <InstantBudgetEstimatorSection />
       <WhyChooseUs />
       <ReviewsSection />
       <FinancingCTA />
