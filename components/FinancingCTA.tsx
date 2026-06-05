@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import CtaTextLink from "@/components/CtaTextLink";
-import { FINANCING_STATEMENT, PHONE, PHONE_HREF } from "@/lib/constants";
+import { FINANCING_STATEMENT, PHONE_HREF } from "@/lib/constants";
+import { CONTACT_ESTIMATE_URL } from "@/lib/links";
 
 export default function FinancingCTA() {
   return (
@@ -15,13 +16,13 @@ export default function FinancingCTA() {
               Financing — Coming When We Are Ready
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-stone-300">
-              {FINANCING_STATEMENT} In the meantime, call us for an estimate
-              and we will walk you through repair and replacement options for your
+              {FINANCING_STATEMENT} In the meantime, request an estimate and we
+              will walk you through repair and replacement options for your
               budget.
             </p>
             <div className="mt-8">
-              <Button href={PHONE_HREF} variant="primaryHero">
-                Call {PHONE}
+              <Button href={CONTACT_ESTIMATE_URL} variant="primaryHero">
+                Request your estimate
               </Button>
             </div>
             <p className="mt-5 text-base text-stone-400">
@@ -29,8 +30,8 @@ export default function FinancingCTA() {
                 Learn more about financing
               </CtaTextLink>
               {" · "}
-              <CtaTextLink href="/contact" variant="dark">
-                Request your estimate
+              <CtaTextLink href={PHONE_HREF} variant="dark">
+                Call us
               </CtaTextLink>
             </p>
           </div>

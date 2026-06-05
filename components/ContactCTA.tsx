@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import CtaTextLink from "@/components/CtaTextLink";
-import { EMAIL, PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
+import { EMAIL, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
 
 export default function ContactCTA() {
   return (
@@ -20,7 +20,7 @@ export default function ContactCTA() {
 
           <div className="mt-10">
             <Button href={PHONE_HREF} variant="primaryHero">
-              Call {PHONE}
+              Call us
             </Button>
           </div>
 

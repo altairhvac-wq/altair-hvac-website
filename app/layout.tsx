@@ -96,7 +96,7 @@ export default function RootLayout({
         <Header />
         <main
           id="main-content"
-          className="flex-1 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-0"
+          className="flex-1 md:pb-0"
         >
           {children}
         </main>

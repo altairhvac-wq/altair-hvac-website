@@ -1,7 +1,7 @@
-import Button from "@/components/Button";
+import CtaTextLink from "@/components/CtaTextLink";
 import SectionHeader from "@/components/SectionHeader";
 import { callPrepTips, whatToExpectSteps } from "@/lib/content/projects";
-import { PHONE, PHONE_HREF } from "@/lib/constants";
+import { PHONE_HREF } from "@/lib/constants";
 
 export default function WhatToExpectSection() {
   return (
@@ -56,11 +56,10 @@ export default function WhatToExpectSection() {
               ))}
             </ul>
           </div>
-          <div className="mt-8 shrink-0 sm:mt-0">
-            <Button href={PHONE_HREF} variant="primary">
-              Call {PHONE}
-            </Button>
-          </div>
+          <p className="mt-8 shrink-0 text-sm text-slate-600 sm:mt-0">
+            Ready to talk?{" "}
+            <CtaTextLink href={PHONE_HREF}>Call us</CtaTextLink>
+          </p>
         </aside>
       </div>
     </section>
