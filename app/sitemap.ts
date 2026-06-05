@@ -7,6 +7,7 @@ const publicPaths = [
   "/about",
   "/financing",
   "/contact",
+  "/instant-estimate",
   "/service-areas",
 ] as const;
 
