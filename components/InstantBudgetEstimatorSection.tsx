@@ -200,16 +200,31 @@ export default function InstantBudgetEstimatorSection() {
                 <p className="mt-3 text-sm leading-relaxed text-stone-400">
                   Based on typical installs in our area. Not a final price.
                 </p>
+                <p className="mt-4 text-sm leading-relaxed text-stone-300">
+                  {result.comfortGuidance}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-stone-400">
+                  {result.rangeChangeNote}
+                </p>
 
                 <div className="mt-8 space-y-4">
                   {result.tiers.map((tier) => (
                     <article
                       key={tier.label}
-                      className="rounded-xl border border-stone-700 bg-stone-950/50 p-5"
+                      className={`rounded-xl border bg-stone-950/50 p-5 ${
+                        tier.label === result.highlightedTier
+                          ? "border-stone-500"
+                          : "border-stone-700"
+                      }`}
                     >
                       <div className="flex flex-wrap items-baseline justify-between gap-2">
                         <h3 className="text-base font-semibold text-stone-100">
                           {tier.label}
+                          {tier.label === result.highlightedTier ? (
+                            <span className="ml-2 text-xs font-medium uppercase tracking-wide text-stone-400">
+                              Often a good fit
+                            </span>
+                          ) : null}
                         </h3>
                         <p className="text-sm font-semibold tabular-nums text-stone-200">
                           {formatEstimateRange(tier.min, tier.max)}

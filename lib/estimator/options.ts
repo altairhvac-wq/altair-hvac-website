@@ -40,12 +40,13 @@ export const ESTIMATOR_URGENCY_OPTIONS: { value: Urgency; label: string }[] = [
 
 export const COMFORT_ISSUE_OPTIONS: { value: ComfortIssue; label: string }[] =
   [
-    { value: "no-heat-cool", label: "No heat or cooling" },
-    { value: "uneven", label: "Uneven comfort / hot & cold spots" },
-    { value: "high-bills", label: "High energy bills" },
-    { value: "air-quality", label: "Poor indoor air quality" },
-    { value: "planning", label: "Planning an upgrade" },
-    { value: "other", label: "Something else" },
+    { value: "planning", label: "Planning ahead / just comparing options" },
+    { value: "old-working", label: "System is old but still working" },
+    { value: "uneven", label: "Uneven temperatures" },
+    { value: "high-bills", label: "High utility bills" },
+    { value: "weak-airflow", label: "Weak airflow" },
+    { value: "frequent-breakdowns", label: "Frequent breakdowns" },
+    { value: "no-heat-cool", label: "No heat / no cooling" },
   ];
 
 export const EMPTY_ESTIMATOR_INPUT = {

@@ -16,12 +16,13 @@ export type EquipmentAge =
 export type Urgency = "routine" | "soon" | "urgent";
 
 export type ComfortIssue =
-  | "no-heat-cool"
+  | "planning"
+  | "old-working"
   | "uneven"
   | "high-bills"
-  | "air-quality"
-  | "planning"
-  | "other";
+  | "weak-airflow"
+  | "frequent-breakdowns"
+  | "no-heat-cool";
 
 export type EstimatorInput = {
   homeSize: HomeSizeRange | "";
@@ -52,4 +53,7 @@ export type EstimatorResult = {
   overallMin: number;
   overallMax: number;
   tiers: TierRange[];
+  comfortGuidance: string;
+  rangeChangeNote: string;
+  highlightedTier?: TierLabel;
 };
