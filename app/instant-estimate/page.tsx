@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Button from "@/components/Button";
 import InstantBudgetEstimator from "@/components/InstantBudgetEstimator";
+import InstantEstimateReassurance from "@/components/InstantEstimateReassurance";
+import InstantEstimateSourceBanner from "@/components/InstantEstimateSourceBanner";
 import PageHero from "@/components/PageHero";
 import { PHONE, PHONE_HREF, SERVICE_AREA } from "@/lib/constants";
 import { CONTACT_ESTIMATE_URL } from "@/lib/links";
@@ -31,7 +33,13 @@ export default function InstantEstimatePage() {
 
       <section className="bg-stone-50 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <InstantEstimateSourceBanner />
+          </div>
           <InstantBudgetEstimator />
+          <div className="mt-10">
+            <InstantEstimateReassurance />
+          </div>
         </div>
       </section>
 
