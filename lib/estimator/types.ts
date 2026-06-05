@@ -24,6 +24,19 @@ export type ComfortIssue =
   | "frequent-breakdowns"
   | "no-heat-cool";
 
+export type HelpNeed = "repair" | "replacement" | "not-sure";
+
+export type DiagnosticSymptom =
+  | "heating"
+  | "cooling"
+  | "airflow"
+  | "high-bills"
+  | "strange-noises"
+  | "thermostat"
+  | "water-leak"
+  | "wont-start"
+  | "other";
+
 export type EstimatorInput = {
   homeSize: HomeSizeRange | "";
   systemType: SystemType | "";

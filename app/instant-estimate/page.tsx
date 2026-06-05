@@ -10,7 +10,7 @@ import { CONTACT_ESTIMATE_URL } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Instant HVAC Budget Estimator",
   description:
-    `Get a rough HVAC budget planning range in under a minute. Not a final quote — exact pricing requires an in-home evaluation. Serving ${SERVICE_AREA}.`,
+    `Repair or replacement? Get service and planning ranges in under a minute. Not a final quote — exact pricing requires an on-site evaluation. Serving ${SERVICE_AREA}.`,
   alternates: {
     canonical: "/instant-estimate",
   },
@@ -28,7 +28,7 @@ export default function InstantEstimatePage() {
       <PageHero
         eyebrow="Planning Tool"
         title="Instant HVAC Budget Estimator"
-        description="Get a rough planning range in under a minute. This is not a final quote — exact pricing requires an in-home evaluation."
+        description="Repair or replacement? Start here for service ranges and planning guidance. This is not a final quote — exact pricing requires an on-site evaluation."
       />
 
       <section className="bg-stone-50 py-16 sm:py-20">

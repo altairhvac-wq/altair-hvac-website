@@ -1,10 +1,39 @@
 import type {
   ComfortIssue,
+  DiagnosticSymptom,
   EquipmentAge,
+  HelpNeed,
   HomeSizeRange,
   SystemType,
   Urgency,
 } from "@/lib/estimator/types";
+
+export const HELP_NEED_OPTIONS: { value: HelpNeed; label: string }[] = [
+  { value: "repair", label: "My system is not working properly" },
+  { value: "replacement", label: "I'm planning a replacement" },
+  { value: "not-sure", label: "I'm not sure" },
+];
+
+export const DIAGNOSTIC_SYMPTOM_OPTIONS: {
+  value: DiagnosticSymptom;
+  label: string;
+}[] = [
+  { value: "heating", label: "Heating problem" },
+  { value: "cooling", label: "Cooling problem" },
+  { value: "airflow", label: "Airflow problem" },
+  { value: "high-bills", label: "High utility bills" },
+  { value: "strange-noises", label: "Strange noises" },
+  { value: "thermostat", label: "Thermostat issue" },
+  { value: "water-leak", label: "Water leak" },
+  { value: "wont-start", label: "System won't start" },
+  { value: "other", label: "Other" },
+];
+
+export const EMPTY_DIAGNOSTIC_INPUT = {
+  equipmentAge: "",
+  symptom: "",
+  urgency: "",
+} as const;
 
 export const HOME_SIZE_OPTIONS: { value: HomeSizeRange; label: string }[] = [
   { value: "under-1500", label: "Under 1,500 sq ft" },

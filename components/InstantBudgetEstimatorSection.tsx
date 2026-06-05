@@ -10,7 +10,7 @@ export default function InstantBudgetEstimatorSection() {
         <SectionHeader
           eyebrow="Planning Tool"
           title="Instant Budget Estimator"
-          description="Answer a few quick questions for a rough budget range to help you plan. This is not a quote — an in-home evaluation is required for exact pricing."
+          description="Tell us what you need — repair guidance, replacement planning, or help deciding. Ranges are for planning only; an on-site evaluation is required for exact pricing."
           centered
         />
 
