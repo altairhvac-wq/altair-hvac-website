@@ -111,6 +111,22 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-stone-800 pt-7 text-center text-xs text-stone-600">
+          <p className="mb-3 text-stone-500">
+            Our owner also built{" "}
+            <a
+              href="https://www.altair-op.com"
+              className="text-stone-400 underline underline-offset-4 transition-colors hover:text-white"
+            >
+              Altair Operating System
+            </a>
+            , field service software for HVAC and trade shops.{" "}
+            <Link
+              href="/our-software"
+              className="text-stone-400 underline underline-offset-4 transition-colors hover:text-white"
+            >
+              Why we built it
+            </Link>
+          </p>
           <p>
             &copy; {year} {COMPANY_NAME}. {EMAIL}
           </p>
