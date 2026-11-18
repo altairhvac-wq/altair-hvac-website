@@ -9,6 +9,7 @@ const publicPaths = [
   "/contact",
   "/instant-estimate",
   "/service-areas",
+  "/our-software",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
