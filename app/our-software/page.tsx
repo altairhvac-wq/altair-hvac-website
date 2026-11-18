@@ -8,7 +8,7 @@ import { COMPANY_NAME } from "@/lib/constants";
 const SOFTWARE_URL = "https://www.altair-op.com";
 
 export const metadata: Metadata = {
-  title: "The Software That Runs Our Shop",
+  title: "The Software Our Owner Built",
   description:
     "The owner of Altair Climate Control also built Altair Operating System, field service software for HVAC, plumbing and electrical shops.",
   alternates: {
@@ -52,7 +52,7 @@ export default function OurSoftwarePage() {
       <PageHero
         eyebrow="Our Software"
         title="The Software That Runs Our Shop"
-        description="Our owner built field service software called Altair Operating System. Here is why, and what we use it for."
+        description="Our owner built field service software called Altair Operating System. Here is why, and what it does."
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -83,8 +83,8 @@ export default function OurSoftwarePage() {
       <section className="bg-slate-50 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            eyebrow="What We Use It For"
-            title="How Our Office and Technicians Use It"
+            eyebrow="What It Does"
+            title="For the Office and the Technicians"
             centered
           />
           <ul className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
